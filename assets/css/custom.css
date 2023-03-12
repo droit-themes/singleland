@@ -592,8 +592,8 @@ a.comment_link {
 .widget-area .widget h2{
 	font-size:20px;
 	margin: 0 0 35px;
-	color:#181b31;
-	font-weight: 600 !important;
+	color:#0F1525;
+	font-weight: 700 !important;
 }
 
 .widget+.widget{
@@ -1349,9 +1349,9 @@ span.post_date_loop {
 }
 .text-white .page-title, .text-white h2{
 	color:#323433;
-    font-family: "Figtree", Sans-serif;
+    font-family: 'Satoshi-Bold';
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
 }
 .breadcrumbs span {
