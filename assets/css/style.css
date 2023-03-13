@@ -43,78 +43,71 @@
 * define all constant here 
 */
 @font-face {
-  font-family: "Satoshi-VariableItalic";
-  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
-  font-weight: 300 900;
-  font-display: swap;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Satoshi-Light";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-LightItalic";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff"), url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Satoshi-Regular";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-Italic";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Satoshi-Medium";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-MediumItalic";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff"), url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Satoshi-Bold";
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-BoldItalic";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff"), url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Satoshi-Black";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Satoshi-BlackItalic";
-  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff"), url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: italic;
@@ -124,27 +117,27 @@
 * Convert SCSS to CSS Variable
 **/
 :root {
-  --primary-color: #55a2fc;
-  --secondary-color: #55a2fc;
-  --link-color: #0F1525;
-  --hovercolor: #55a2fc;
+  --primary-color: #E76B2D;
+  --secondary-color: #E76B2D;
+  --link-color: #191919;
+  --hovercolor: #E76B2D;
   --body-color: #494849;
-  --headings-color: #0F1525;
+  --headings-color: #191919;
   --placeholder-color: #494849;
   --widget_title_color: #181B31;
-  --body-font-family: Satoshi-Regular;
-  --menu-font-family: Figtree, sans-serif;
-  --headings-font-family: Satoshi-Bold;
+  --body-font-family: Satoshi;
+  --menu-font-family: Satoshi;
+  --headings-font-family: Satoshi;
   --body-font-size: 18px;
   --body-font-weight: 400;
-  --body-line-height: 26px;
-  --h1-font-size: 48px;
-  --h2-font-size: 40px;
-  --h3-font-size: 24px;
-  --h4-font-size: 22px;
-  --h5-font-size: 18px;
-  --h6-font-size: 16px;
-  --post-font-size: 14px;
+  --body-line-height: 30px;
+  --h1-font-size: 60px;
+  --h2-font-size: 44px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 20px;
+  --post-font-size: 18px;
   --h1-font-weight: 700;
   --h2-font-weight: 700;
   --h3-font-weight: 700;
@@ -163,7 +156,7 @@
   --color-black: #000;
   --color-read: #FF0000;
   --link-transition: all 0.3s;
-  --heading-color: #0F1525;
+  --heading-color: #191919;
 }
 
 .header_top {
@@ -289,15 +282,20 @@
 }
 .menu > .nav-item > .nav-link {
   font-family: var(--menu-font-family);
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 700;
   color: var(--link-color);
   padding: 0;
-  text-transform: uppercase;
   position: relative;
   text-decoration: none;
 }
-.menu > .nav-item > .nav-link:after {
-  display: none;
+.menu > .nav-item > .nav-link.dropdown-toggle::after {
+  content: "\f078";
+  font-family: "FontAwesome";
+  display: inline-flex;
+  border: 0px;
+  font-size: 10px;
+  margin-left: 4px;
 }
 .menu > .nav-item > .nav-link:before {
   content: "";
@@ -350,12 +348,19 @@
 .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link {
   padding: 0;
   white-space: nowrap;
-  font-size: 14px;
+  font-weight: 500;
   color: var(--body-color);
   transition: color 0.2s linear;
+  display: block;
 }
-.menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link:after {
-  display: none;
+.menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link.dropdown-toggle::after {
+  content: "\f105";
+  font-family: "FontAwesome";
+  display: inline-flex;
+  border: 0px;
+  font-size: 12px;
+  position: absolute;
+  right: 11px;
 }
 .menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item.active > .nav-link {
   color: var(--hovercolor);
@@ -1038,12 +1043,12 @@
 }
 
 .blog_title {
-  font-size: var(--h2-font-size);
+  font-size: 38px;
   line-height: var(--h2-line-height);
   color: var(--headings-color);
   font-weight: var(--widget-title-weight);
   transition: color 0.2s linear;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   word-break: break-word;
 }
 .blog_title a {
@@ -1065,7 +1070,7 @@
   }
 }
 .media_blog_content p {
-  line-height: 1.8;
+  line-height: 1.7;
   margin-top: 0;
 }
 .media_blog_content p a {
@@ -1083,15 +1088,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: var(--post-font-size);
-  font-family: "Satoshi-Bold";
-  font-weight: var(--font-bold-weight);
+  font-size: 16px;
+  font-family: var(--body-font-family);
+  font-weight: var(--font-medium-weight);
   color: var(--placeholder-color);
 }
 .media_blog_content .post_bottom .learn_btn_two {
   text-decoration: none;
   color: var(--placeholder-color);
-  text-transform: uppercase;
 }
 .media_blog_content .post_bottom .learn_btn_two:after {
   content: "\e901";
@@ -1107,11 +1111,18 @@
 .media_blog_content .post_bottom .learn_btn_two:hover:after {
   transform: translateX(5px);
 }
+.media_blog_content .post_bottom a.comment_link {
+  color: var(--placeholder-color);
+  text-decoration: none;
+}
+.media_blog_content .post_bottom a.comment_link:hover {
+  color: var(--hovercolor);
+}
 
 .post-meta {
   color: var(--placeholder-color);
   font-size: var(--body-font-size);
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .post-meta span:not(:last-child):after {
   content: "";
@@ -1272,8 +1283,8 @@ blockquote {
   position: relative;
   margin-bottom: 60px;
   overflow: hidden;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   z-index: 1;
 }
 @media (max-width: 576px) {
@@ -1453,7 +1464,7 @@ blockquote cite br {
   margin: -5px -4px;
 }
 .tagcloud a, .tagcloud .tag-cloud-link, .wp-block-tag-cloud a, .wp-block-tag-cloud .tag-cloud-link {
-  font-size: 14px !important;
+  font-size: 16px !important;
   line-height: 34px;
   color: var(--body-color);
   border-radius: 3px;
@@ -1462,7 +1473,7 @@ blockquote cite br {
   padding: 0 20px;
   display: inline-block;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   margin: 5px 3px;
   transition: all 0.2s linear;
 }
@@ -1708,6 +1719,7 @@ blockquote cite br {
   border-spacing: 0;
   text-align: left;
   margin-bottom: 4em;
+  margin-top: 2em !important;
 }
 .blog_single_info table thead {
   background: #f5f5f5;
@@ -1726,14 +1738,15 @@ blockquote cite br {
   text-decoration: none;
   font-weight: 500;
   line-height: 40px !important;
+  color: var(--body-color);
 }
 .blog_single_info table td a:hover, .blog_single_info table th a:hover {
-  color: var(--color-white);
+  color: var(--hovercolor);
 }
 .blog_single_info table th {
   padding: 0 20px;
   list-style: inherit;
-  color: var(--primary-color);
+  color: var(--headings-color);
   background: transparent;
 }
 @media (max-width: 576px) {
@@ -2121,7 +2134,7 @@ dl dd a:hover {
   width: 100%;
   line-height: 1.6;
   transition: color 0.2s linear;
-  font-size: 15px;
+  font-size: 16px;
   align-items: center;
   color: var(--widget_title_color);
   margin-top: 0 !important;
@@ -2133,7 +2146,7 @@ dl dd a:hover {
   color: var(--widget_title_color);
   text-decoration: none;
   transition: color 0.2s linear;
-  font-size: 15px;
+  font-size: 16px;
 }
 .widget ul > li a:hover, .widget .wp-block-archives > li a:hover {
   color: var(--hovercolor);
@@ -2217,11 +2230,13 @@ dl dd a:hover {
   font-weight: var(--widget-title-weight);
   line-height: 45px;
   border-top: 1px solid #DFE2E7;
+  background: #f5f5f5;
 }
 .calendar_wrap tbody td, .wp-block-calendar tbody td {
   text-align: center;
   font-size: 14px;
   color: var(--body-color);
+  border: 1px solid #dfe2e7;
 }
 .calendar_wrap tbody td a, .wp-block-calendar tbody td a {
   display: block;
@@ -2298,7 +2313,7 @@ dl dd a:hover {
   font-weight: var(--widget-title-weight);
   display: block;
   font-size: var(--h6-font-size);
-  line-height: 1.6;
+  line-height: 1.4;
   width: 100%;
 }
 .widget_rss ul li .rss-date {
@@ -2308,7 +2323,7 @@ dl dd a:hover {
   margin: 2px 0 15px;
 }
 .widget_rss ul li .rssSummary {
-  font-size: var(--body-font-size);
+  font-size: 16px;
 }
 .widget_rss ul li cite {
   font-weight: var(--font-medium-weight);
@@ -2553,78 +2568,71 @@ dl dd a:hover {
 * define all constant here 
 */
 @font-face {
-  font-family: "Satoshi-VariableItalic";
-  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
-  font-weight: 300 900;
-  font-display: swap;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Satoshi-Light";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-LightItalic";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff"), url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Satoshi-Regular";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-Italic";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Satoshi-Medium";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-MediumItalic";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff"), url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Satoshi-Bold";
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-BoldItalic";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff"), url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: "Satoshi-Black";
+  font-family: "Satoshi";
   src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Satoshi-BlackItalic";
-  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff"), url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: italic;
@@ -2634,27 +2642,27 @@ dl dd a:hover {
 * Convert SCSS to CSS Variable
 **/
 :root {
-  --primary-color: #55a2fc;
-  --secondary-color: #55a2fc;
-  --link-color: #0F1525;
-  --hovercolor: #55a2fc;
+  --primary-color: #E76B2D;
+  --secondary-color: #E76B2D;
+  --link-color: #191919;
+  --hovercolor: #E76B2D;
   --body-color: #494849;
-  --headings-color: #0F1525;
+  --headings-color: #191919;
   --placeholder-color: #494849;
   --widget_title_color: #181B31;
-  --body-font-family: Satoshi-Regular;
-  --menu-font-family: Figtree, sans-serif;
-  --headings-font-family: Satoshi-Bold;
+  --body-font-family: Satoshi;
+  --menu-font-family: Satoshi;
+  --headings-font-family: Satoshi;
   --body-font-size: 18px;
   --body-font-weight: 400;
-  --body-line-height: 26px;
-  --h1-font-size: 48px;
-  --h2-font-size: 40px;
-  --h3-font-size: 24px;
-  --h4-font-size: 22px;
-  --h5-font-size: 18px;
-  --h6-font-size: 16px;
-  --post-font-size: 14px;
+  --body-line-height: 30px;
+  --h1-font-size: 60px;
+  --h2-font-size: 44px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 20px;
+  --post-font-size: 18px;
   --h1-font-weight: 700;
   --h2-font-weight: 700;
   --h3-font-weight: 700;
@@ -2673,7 +2681,7 @@ dl dd a:hover {
   --color-black: #000;
   --color-read: #FF0000;
   --link-transition: all 0.3s;
-  --heading-color: #0F1525;
+  --heading-color: #191919;
 }
 
 html {
@@ -2707,13 +2715,13 @@ h2 {
 h3 {
   font-size: var(--h3-font-size);
   font-weight: var(--h3-font-weight);
-  margin: 0.67em 0;
+  margin: 0.37em 0 0.47em;
 }
 
 h4 {
   font-size: var(--h4-font-size);
   font-weight: var(--h4-font-weight);
-  margin: 0.67em 0;
+  margin: 0.37em 0 0.47em;
 }
 
 h5 {
@@ -2768,6 +2776,10 @@ a:active {
   outline: 0;
 }
 
+table tr td {
+  border-left: 1px solid #dfe2e7;
+}
+
 .list-unstyled {
   list-style: none;
   margin: 0;
@@ -2797,6 +2809,7 @@ a:active {
 .text-white .breadcrumb .breadcrumbs__link, .text-white .breadcrumbs .breadcrumbs__link {
   color: var(--color-white);
   text-decoration: none;
+  font-weight: 500;
 }
 .text-white .breadcrumb li a, .text-white .breadcrumbs li a {
   color: var(--color-white);

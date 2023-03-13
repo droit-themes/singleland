@@ -496,25 +496,23 @@ text-align: center;
     color: #323433; 
 }
 .blog_single_info h1{
-    margin: 0;
+    margin: 0.0em 0 0.12em;
 }
 .entry-content h1{
     margin: 0;
 }
 .blog_single_info h4{
-   color: #06163A;
+   color: #191919;
 }
 .entry-content h4{
-    color: #06163A;
+    color: #191919;
  }
 
 .blog_single_info .media_blog_content blockquote p{
-  color: #06163A;   
+  color: #191919;   
 }
 
-.blog_single_info table th a:hover{
-    color: #06163A; 
-}
+
 
 .site-footer{
   background-color: #edebeb;
@@ -558,15 +556,10 @@ a#cancel-comment-reply-link {
     background: no-repeat;
 }
 
-h2.entry-title.blog_title {
+/* h2.entry-title.blog_title {
     font-size: 28px;
-}
+} */
 
-a.comment_link {
- color: #677789;
- text-decoration: none;
- text-transform: uppercase;
-}
 
 .media_blog_content {
 	padding:25px;
@@ -576,7 +569,6 @@ a.comment_link {
     border: 0 !important;
     padding: 11px 23px !important;
     cursor: pointer !important;
-    background: #54a2fa !important;
     color: #FFFFFF !important;
     font-size: 16px !important;
     line-height: 29px !important;
@@ -590,9 +582,8 @@ a.comment_link {
  margin-top:30px;
 }
 .widget-area .widget h2{
-	font-size:20px;
+	font-size:24px;
 	margin: 0 0 35px;
-	color:#0F1525;
 	font-weight: 700 !important;
 }
 
@@ -1348,10 +1339,10 @@ span.post_date_loop {
     padding-right: 15px;
 }
 .text-white .page-title, .text-white h2{
-	color:#323433;
-    font-family: 'Satoshi-Bold';
-    font-size: 50px;
+    font-family: 'Satoshi';
     font-weight: 700;
+    font-size: 60px;
+    color: #191919;
     line-height: 1.2;
 }
 .breadcrumbs span {
@@ -1522,17 +1513,17 @@ span.post_date_loop {
 	margin: 0px;
 }
 .shop_details_content .social-icon li a:hover{
-	background-color: #066CEC !important;
+	background-color: #e76b2d !important;
     color: #fff !important;
 }
 
 .blog_breadcrumbs_area_two, .blog_breadcrumbs_area_two.archive-banner, .blog_breadcrumbs_area_two.banner-404, .blog_breadcrumbs_area_two.blog-single-page, .blog_breadcrumbs_area_two.page-banner{
-    background-color: #4290ec26 !important;
+    background-color: #EBEBEB !important;
 }
 
 /*  2nd soft-reject */
 .post-page-numbers {
-    background: #55a2fc;
+    background: #e76b2d;
     color: #FFFFFF !important;
     text-decoration: none;
     width: 44px;
@@ -1588,16 +1579,16 @@ span.post_date_loop {
 }
 
 .woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button, .woocommerce-page .woocommerce-error .button, .woocommerce-page .woocommerce-info .button, .woocommerce-page .woocommerce-message .button{
-    background: #54A2FA;
+    background: #191919;
     color: #FFFFFF;
     margin-top:-5px;
 }
 .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
-    background:#0d6efd;
+    background:#191919;
     color: #FFFFFF;	
 }
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
-    background:#54A2FA;
+    background:#191919;
     color: #FFFFFF;	  
 }
 .woocommerce-message::before {

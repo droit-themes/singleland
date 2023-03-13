@@ -2,19 +2,9 @@
 * define all constant here 
 */
 
-@font-face {
-  font-family: 'Satoshi-VariableItalic';
-  src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2'),
-       url('../fonts/Satoshi-VariableItalic.woff') format('woff'),
-       url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
-       font-weight: 300 900;
-       font-display: swap;
-       font-style: italic;
-}
-
 
 @font-face {
-  font-family: 'Satoshi-Light';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
        url('../fonts/Satoshi-Light.woff') format('woff'),
        url('../fonts/Satoshi-Light.ttf') format('truetype');
@@ -25,7 +15,7 @@
 
 
 @font-face {
-  font-family: 'Satoshi-LightItalic';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
        url('../fonts/Satoshi-LightItalic.woff') format('woff'),
        url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
@@ -36,7 +26,7 @@
 
 
 @font-face {
-  font-family: 'Satoshi-Regular';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
        url('../fonts/Satoshi-Regular.woff') format('woff'),
        url('../fonts/Satoshi-Regular.ttf') format('truetype');
@@ -47,7 +37,7 @@
 
 
 @font-face {
-  font-family: 'Satoshi-Italic';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
        url('../fonts/Satoshi-Italic.woff') format('woff'),
        url('../fonts/Satoshi-Italic.ttf') format('truetype');
@@ -58,7 +48,7 @@
 
 
 @font-face {
-  font-family: 'Satoshi-Medium';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
        url('../fonts/Satoshi-Medium.woff') format('woff'),
        url('../fonts/Satoshi-Medium.ttf') format('truetype');
@@ -69,7 +59,7 @@
 
 
 @font-face {
-  font-family: 'Satoshi-MediumItalic';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
        url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
        url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
@@ -78,9 +68,19 @@
        font-style: italic;
 }
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('../fonts/Satoshi-Bold.woff') format('woff'),
+       url('../fonts/Satoshi-Bold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
 
 @font-face {
-  font-family: 'Satoshi-Bold';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
        url('../fonts/Satoshi-Bold.woff') format('woff'),
        url('../fonts/Satoshi-Bold.ttf') format('truetype');
@@ -91,7 +91,7 @@
 
 
 @font-face {
-  font-family: 'Satoshi-BoldItalic';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
        url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
        url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
@@ -100,53 +100,42 @@
        font-style: italic;
 }
 
-
 @font-face {
-  font-family: 'Satoshi-Black';
+  font-family: 'Satoshi';
   src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
        url('../fonts/Satoshi-Black.woff') format('woff'),
        url('../fonts/Satoshi-Black.ttf') format('truetype');
        font-weight: 900;
        font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Satoshi-BlackItalic';
-  src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
-       url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
-       url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
-       font-weight: 900;
-       font-display: swap;
        font-style: italic;
 }
 
-$primary-color: #55a2fc !default;
-$secondary-color: #55a2fc !default;
-$headding-color: #0F1525;
-$link-color: #0F1525;
-$hovercolor: #55a2fc;
+
+$primary-color: #E76B2D !default;
+$secondary-color: #E76B2D !default;
+$headding-color: #191919;
+$link-color: #191919;
+$hovercolor: #E76B2D;
 $body-color: #494849;
 $placeholder-color: #494849;
 $widget_title_color:#181B31;
 
-$body-font-family:  'Satoshi-Regular' !default;
-$menu-font-family:  'Figtree', sans-serif !default;
-$headings-font-family: 'Satoshi-Bold' !default;
+$body-font-family:  'Satoshi' !default;
+$menu-font-family:  'Satoshi' !default;
+$headings-font-family: 'Satoshi' !default;
 
 
 $body-font-size: 18px !default;
 $body-font-weight: 400 !default;
-$body-line-height: 26px !default;
+$body-line-height: 30px !default;
 
-$h1-font-size: 48px ;
-$h2-font-size: 40px;
-$h3-font-size: 24px;
-$h4-font-size: 22px;
-$h5-font-size: 18px;
-$h6-font-size: 16px;
-$post-font-size: 14px;
+$h1-font-size: 60px ;
+$h2-font-size: 44px;
+$h3-font-size: 32px;
+$h4-font-size: 28px;
+$h5-font-size: 24px;
+$h6-font-size: 20px;
+$post-font-size: 18px;
 
 $h1-font-weight: 700 !default;
 $h2-font-weight: 700 !default;

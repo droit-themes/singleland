@@ -64,12 +64,12 @@
     }
 }
 .blog_title{
-    font-size: var(--h2-font-size);
+    font-size: 38px;
     line-height: var(--h2-line-height);
     color: var(--headings-color);
     font-weight: var(--widget-title-weight);
     transition: color 0.2s linear;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     word-break: break-word;
     a{
         color: var(--headings-color);
@@ -87,7 +87,7 @@
         padding: 28px 20px;
     }
     p{
-        line-height: 1.8;
+        line-height: 1.7;
         margin-top: 0;
         a{
             font-weight: 500;
@@ -105,14 +105,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        font-size: var(--post-font-size);
-        font-family: 'Satoshi-Bold';
-        font-weight: var(--font-bold-weight);
+        font-size: 16px;
+        font-family: var(--body-font-family);
+        font-weight: var(--font-medium-weight);
         color: var(--placeholder-color);
         .learn_btn_two{
             text-decoration: none;
             color: var(--placeholder-color);
-            text-transform: uppercase;
             &:after{
                 content: "\e901";
                 font-family: 'icomoon' !important;
@@ -128,12 +127,19 @@
                 }
             }
         }
+        a.comment_link{
+            color: var(--placeholder-color);
+            text-decoration: none;
+            &:hover{
+                color: var(--hovercolor);
+            }
+        }
     }
 }
 .post-meta{
     color: var(--placeholder-color);
     font-size: var(--body-font-size);
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     span{
         &:not(:last-child):after{
             content: "";
@@ -289,8 +295,8 @@ blockquote{
     position: relative;
     margin-bottom: 60px;
     overflow: hidden;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     z-index: 1;
     @media (max-width:576px) {
         padding-right: 30px; 
@@ -484,7 +490,7 @@ blockquote{
 .tagcloud,.wp-block-tag-cloud{
     margin: -5px -4px;
     a,.tag-cloud-link{
-        font-size: 14px !important;
+        font-size: 16px !important;
         line-height: 34px;
         color: var(--body-color);
         border-radius: 3px;
@@ -493,7 +499,7 @@ blockquote{
         padding: 0 20px;
         display: inline-block;
         text-decoration: none;
-        font-weight: 400;
+        font-weight: 500;
         margin: 5px 3px;
         transition: all 0.2s linear;
         &:hover{
@@ -775,6 +781,7 @@ blockquote{
         border-spacing: 0;
         text-align: left;
         margin-bottom: 4em;
+        margin-top: 2em!important;
         thead{
             background: #f5f5f5;
         }
@@ -789,15 +796,16 @@ blockquote{
                 text-decoration: none;
                 font-weight: 500;
                 line-height: 40px !important;
+                color: var(--body-color);
                 &:hover{
-                    color: var(--color-white);
+                    color: var(--hovercolor);
                 }
             }
         }
         th{
             padding: 0 20px;
             list-style: inherit;
-            color: var(--primary-color);
+            color: var(--headings-color);
             background: transparent;
             @media (max-width:576px) {
                 padding: 0 5px;
@@ -1176,7 +1184,7 @@ dl{
             width: 100%;
             line-height: 1.6;
             transition: color 0.2s linear;
-            font-size: 15px;
+            font-size: 16px;
             align-items: center;
             color: var(--widget_title_color);
             margin-top: 0 !important;
@@ -1187,7 +1195,7 @@ dl{
                 color: var(--widget_title_color);
                 text-decoration: none;
                 transition: color 0.2s linear;
-                font-size: 15px;
+                font-size: 16px;
                 &:hover{
                     color: var(--hovercolor);
                 }
@@ -1276,12 +1284,14 @@ dl{
         font-weight: var(--widget-title-weight);
         line-height: 45px;
         border-top: 1px solid #DFE2E7;
+        background: #f5f5f5;
     }
     tbody{
         td{
             text-align: center;
             font-size: 14px;
             color: var(--body-color);
+            border: 1px solid #dfe2e7;
             a{
                 display: block;
                 background: var(--hovercolor);
@@ -1375,7 +1385,7 @@ dl{
                 font-weight: var(--widget-title-weight);
                 display: block;
                 font-size: var(--h6-font-size);
-                line-height: 1.6;
+                line-height: 1.4;
                 width: 100%;
             }
             .rss-date{
@@ -1386,7 +1396,7 @@ dl{
                 
             }
             .rssSummary{
-                font-size: var(--body-font-size);
+                font-size: 16px;
             }
             cite{
                 font-weight: var(--font-medium-weight);

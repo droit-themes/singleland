@@ -128,14 +128,19 @@
         }
         > .nav-link {
             font-family: var(--menu-font-family);
-            font-size: 15px;
+            font-size: 16px;
+            font-weight: 700;
             color: var(--link-color);
             padding: 0;
-            text-transform: uppercase;
             position: relative;
             text-decoration: none;
-            &:after {
-                display: none;
+            &.dropdown-toggle::after{
+                content: '\f078';
+                font-family: 'FontAwesome';
+                display: inline-flex;
+                border: 0px;
+                font-size: 10px;
+                margin-left: 4px;
             }
 
             &:before {
@@ -190,11 +195,18 @@
                     .nav-link {
                         padding: 0;
                         white-space: nowrap;
-                        font-size: 14px;
+                        font-weight: 500;
                         color: var(--body-color);
                         transition: color 0.2s linear;
-                        &:after {
-                            display: none;
+                        display: block;
+                        &.dropdown-toggle::after{
+                            content: '\f105';
+                            font-family: 'FontAwesome';
+                            display: inline-flex;
+                            border: 0px;
+                            font-size: 12px;
+                            position: absolute;
+                            right: 11px;
                         }
                     }
 
