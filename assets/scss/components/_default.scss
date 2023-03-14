@@ -164,21 +164,21 @@ table tr td {
 }
 
 
-.container{
-    @media (min-width:1200px){
-      max-width: 1140px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-    .row{
-      @media (min-width:1200px){
-        margin-right: calc(var(--bs-gutter-x)/ -1.6);
-        margin-left: calc(var(--bs-gutter-x)/ -1.6);
-        & >*{
-          padding-right: calc(var(--bs-gutter-x)/ 1.6);
-          padding-left: calc(var(--bs-gutter-x)/ 1.6);
-        }
-      }
+// .container{
+//     @media (min-width:1200px){
+//       max-width: 1140px;
+//       padding-left: 15px;
+//       padding-right: 15px;
+//     }
+//     .row{
+//       @media (min-width:1200px){
+//         margin-right: calc(var(--bs-gutter-x)/ -1.6);
+//         margin-left: calc(var(--bs-gutter-x)/ -1.6);
+//         & >*{
+//           padding-right: calc(var(--bs-gutter-x)/ 1.6);
+//           padding-left: calc(var(--bs-gutter-x)/ 1.6);
+//         }
+//       }
       
-    }
-  }
+//     }
+//   }

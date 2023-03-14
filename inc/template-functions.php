@@ -468,3 +468,11 @@ if(get_builder_id($arr, 'entire_website')) {
         $links = str_replace(')', '</span> </a>', $links);
         return $links;
     });
+
+
+	add_action('woocommerce_after_shop_loop_item','replace_add_to_cart');
+	function replace_add_to_cart() {
+		global $product;
+		$link = $product->get_permalink();
+		echo do_shortcode('<a href="'.$link.'" class="cart_banner_button addtocartbutton">Buy This Product</a>');
+	}

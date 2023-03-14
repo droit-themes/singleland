@@ -1348,11 +1348,7 @@ span.post_date_loop {
 .breadcrumbs span {
     color: #323433;
 }
-@media (min-width: 1200px){	
-    .container {
-        max-width: 1170px;
-    }
-}
+
 /*==== e-commerce css ===*/
 .sidebar_right.shop .widget{
 	background: #F7F9FB;

@@ -77,6 +77,15 @@
        font-display: swap;
        font-style: normal;
 }
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+       url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: italic;
+}
 
 
 @font-face {
@@ -105,6 +114,14 @@
   src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
        url('../fonts/Satoshi-Black.woff') format('woff'),
        url('../fonts/Satoshi-Black.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+       url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
        font-weight: 900;
        font-display: swap;
        font-style: italic;
@@ -220,3 +237,4 @@ $link-transition: all .3s !default;
   --link-transition: #{$link-transition};
   --heading-color: #{$headding-color};
 }
+

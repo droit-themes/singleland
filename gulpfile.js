@@ -35,10 +35,10 @@ const paths = {
 
 function compress () {
     return src(paths.package.src)
-        .pipe(replace('_themename', 'donority'))
-        .pipe(replace('_THEMENAME', 'DONORITY'))
-        .pipe(replace('_Themename', 'Donority'))
-        .pipe(zip(`donority.zip`))
+        .pipe(replace('_themename', 'singleland'))
+        .pipe(replace('_THEMENAME', 'SINGLELAND'))
+        .pipe(replace('_Themename', 'Singleland'))
+        .pipe(zip(`singleland.zip`))
         .pipe(dest(paths.package.dest))
 }
 
