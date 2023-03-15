@@ -23,7 +23,7 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
-$custom_class = (isset($_GET['view']) && $_GET['view'] == 'list') ? 'col-12' : 'col-lg-4 col-sm-6';
+$custom_class = (isset($_GET['view']) && $_GET['view'] == 'list') ? 'col-12' : 'col-lg-3 col-sm-6';
 ?>
 <div <?php wc_product_class( $custom_class, $product ); ?>>
 	<?php
