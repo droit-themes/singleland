@@ -677,8 +677,14 @@ a#cancel-comment-reply-link {
 }
 .woocommerce-tabs h2{
 	font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.woocommerce-tabs p{
+    color:#7A7A7C;
+}
+.entry-content table tr.woocommerce-product-attributes-item{
+    border: 1px solid rgba(25, 25, 25, 0.12);
 }
 .related{
 	padding-top: 70px;
