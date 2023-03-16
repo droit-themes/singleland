@@ -125,6 +125,13 @@
   font-display: swap;
   font-style: italic;
 }
+@font-face {
+  font-family: "Plein-Bold";
+  src: url("../fonts/Plein-Bold.woff2") format("woff2"), url("../fonts/Plein-Bold.woff") format("woff"), url("../fonts/Plein-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
 /**
 * Define All CSS Variable
 * Convert SCSS to CSS Variable
@@ -2662,6 +2669,13 @@ dl dd a:hover {
   font-weight: 900;
   font-display: swap;
   font-style: italic;
+}
+@font-face {
+  font-family: "Plein-Bold";
+  src: url("../fonts/Plein-Bold.woff2") format("woff2"), url("../fonts/Plein-Bold.woff") format("woff"), url("../fonts/Plein-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
 /**
 * Define All CSS Variable
