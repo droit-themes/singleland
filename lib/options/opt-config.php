@@ -32,14 +32,12 @@ if ( ! defined( 'ABSPATH' ) ) {
         'allow_sub_menu'   => true,
     );
 
-
     // Add content after the form.
     $args['footer_text'] = '<br>'.esc_html__( 'Copyright singleland &copy; 2022', 'singleland' );
 
     Redux::set_args( $opt_name, $args );
-
-	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_banner.php';
     require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_header.php';
+	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_banner.php';
     require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_footer.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_colors.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_blog.php';
