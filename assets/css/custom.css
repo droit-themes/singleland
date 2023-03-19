@@ -640,6 +640,7 @@ a#cancel-comment-reply-link {
   left: auto;
   top:10px;
   z-index:5;
+  background: #E76B2D;
 }
 .theme-list-view-wrapper .add_to_wishlist i {
     margin-left: -4px;
@@ -689,11 +690,11 @@ a#cancel-comment-reply-link {
 .related{
 	padding-top: 70px;
 }
-.related h2{
+/* .related h2{
 	font-size: 28px;
   font-weight: 600;
   margin-bottom: 25px;
-}
+} */
 .single-product .yith-wcwl-add-button span{
 	display:none;
 }
@@ -1136,9 +1137,7 @@ li.wc-block-grid__product {
 .medical_featured_pr_item_style3{
 	padding-top: 0px;
 }
-.medical_featured_pr_item_style3 .product_featured_img{
-	padding-top: 20px;
-}
+
 .price,#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button,.woocommerce button.button{
 	font-family: Figtree, sans-serif;
 }
@@ -1347,7 +1346,7 @@ span.post_date_loop {
 }
 .text-white .page-title, .text-white h2{
     font-family: 'Satoshi';
-    font-weight: 700;
+    font-weight: 900;
     font-size: 60px;
     color: #191919;
     line-height: 1.2;
@@ -1433,10 +1432,7 @@ span.post_date_loop {
  .product_page_per_view .pr_view li a.active{
   	border-color:#55A2FC;
  }
- .products  .medical_featured_pr_item.medical_featured_pr_item_style3{
- 	background: #F5F6FD;
-    border: 0px;
- }
+ 
 .offer_badge.sale-perc{
  	position: absolute;
     top: 10px;
@@ -1462,7 +1458,6 @@ span.post_date_loop {
 }
 .medical_featured_pr_item .hover_item .yith-wcwl-add-to-wishlist a:visited,.medical_featured_pr_item .hover_item a:hover{
 	color: #fff;
-    background: #55a2fc !important;
 } 
 .woocommerce form table.shop_table.wishlist_table.wishlist_view .product-name a{
 	font-size: 18px;
@@ -1646,10 +1641,11 @@ span.post_date_loop {
 	opacity:1;
 	padding: 15px 68px!important;
     border-radius: 0px;
+    transition: all 0.3s;
 }
-/* .woocommerce div.product form.cart .button:hover{
-	background-color:#066CEC !important;
-} */
+.woocommerce div.product form.cart .button:hover{
+	background-color:#191919 !important;
+}
 
 /* .flex-viewport .woocommerce-product-gallery__image img{
 	padding-top: 20px;

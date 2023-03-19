@@ -51,10 +51,7 @@
   opacity: 1;
 }
 .medical_featured_pr_item:hover .product_featured_content h3 {
-  color: #54a2fa;
-}
-.medical_featured_pr_item:hover .product_featured_content .featured_content_bottom .price {
-  transform: translateY(-30px);
+  color: var(--primary-color);
 }
 .medical_featured_pr_item:hover .product_featured_content .featured_content_bottom .rating {
   bottom: 2px;
@@ -81,18 +78,20 @@
   position: relative;
 }
 .product_featured_content h6 {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #8e8e8e;
+  color: #7A7A7C;
+  font-size: 18px;
+  font-family: var(--body-font-family);
+  font-weight: 400;
   letter-spacing: 1.05px;
   margin-bottom: 12px;
   transition: color 0.2s linear;
 }
 .product_featured_content h3 {
-  font-size: 20px;
-  color: #2c2c51;
+  font-size: 22px;
+  font-family: var(--body-font-family);
+  color: var(--headings-color);
   line-height: 1;
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 14px;
   transition: color 0.2s linear;
 }
@@ -103,8 +102,8 @@
 
 .price {
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-family: var(--body-font-family);
+  font-weight: 500;
   color: #54a2fa;
   position: relative;
   transition: all 0.2s linear;
@@ -154,38 +153,30 @@
   overflow: hidden;
   padding: 40px 0px;
   margin-bottom: 30px;
-}
-.medical_featured_pr_item_style3:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: opacity 0.3s linear;
+  transition: all 0.2s;
 }
 .medical_featured_pr_item_style3 .product_featured_img {
-  margin-bottom: 12px;
+  margin-bottom: 0px;
   position: relative;
 }
 .medical_featured_pr_item_style3 .hover_item {
   transform: translateY(-30%);
 }
-.medical_featured_pr_item_style3:hover:before {
-  opacity: 1;
+.medical_featured_pr_item_style3:hover {
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0px 30px 60px rgba(15, 21, 37, 0.06);
 }
 .medical_featured_pr_item_style3:hover .product_featured_content h6 {
-  color: rgba(255, 255, 255, 0.5);
+  color: #7A7A7C;
 }
 .medical_featured_pr_item_style3:hover .product_featured_content h3 {
-  color: #fff;
+  color: var(--primary-color);
   transition: color 0.3s;
 }
 
 .item_border {
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(25, 25, 25, 0.12);
 }
 
 .medical_featured_product_area_three {
@@ -209,6 +200,13 @@
 }
 .medical_featured_pr_item_style4 .rating {
   text-align: left;
+}
+
+.related.products h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 44px;
+  font-weight: 900;
 }
 
 /*============== medical_featured_product_area css  ===============*/
@@ -311,8 +309,8 @@
   font-size: 14px;
   font-weight: 600;
   font-family: Figtree, sans-serif;
-  padding: 2px 15px !important;
-  background: #1ccd42;
+  padding: 0px 15px !important;
+  background: #E76B2D;
   border-radius: 0;
   line-height: inherit;
   padding: 0;

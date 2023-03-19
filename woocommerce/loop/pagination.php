@@ -28,6 +28,6 @@ if ( $total <= 1 ) {
 	return;
 }
 ?>
-<div class="d-flex">
+<div class="d-flex justify-content-center">
 	<?php singleland_pagination(); ?>
 </div>
