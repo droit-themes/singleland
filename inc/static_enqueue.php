@@ -24,6 +24,8 @@ function singleland_scripts() {
     /**
      * Enqueueing Scripts
      */
+	wp_enqueue_script( 'popper', SINGLELAND_VEND. '/bootstrap/js/popper.min.js', array('jquery'), '2.9.2', true );
+	wp_enqueue_script( 'bootstrap-min', SINGLELAND_VEND. '/bootstrap/js/bootstrap.min.js', array('jquery'), '5.0.2', true );
 	wp_enqueue_script( 'mediaelement-and-player', SINGLELAND_VEND. '/media-player/mediaelement-and-player.min.js', array('jquery'), '4.2.6', true );
 	wp_enqueue_script( 'parallaxie', SINGLELAND_VEND. '/parallax/parallaxie.js', array('jquery'), '0.5', true );
 	wp_enqueue_script( 'nice-select', SINGLELAND_VEND. '/nice-select/jquery.nice-select.min.js', array('jquery'), '0.5', true );
