@@ -331,6 +331,11 @@
   margin: auto !important;
 }
 
+.woocommerce .woocommerce-result-count {
+  font-weight: 400;
+  font-size: 18px;
+}
+
 /*============= End medical_product_category_style2 css =============*/
 /*============ shop css =================*/
 .media_shop_area {
@@ -341,7 +346,7 @@
 .product_top_filter {
   display: flex;
   justify-content: space-between;
-  font-family: "Figtree", sans-serif;
+  font-family: var(--body-font-family);
   margin-bottom: 38px;
 }
 .product_top_filter .product_page_filter {
@@ -357,8 +362,11 @@
 }
 .product_top_filter .product_page_filter span {
   line-height: 22px;
-  color: #909090;
+  color: #7A7A7C;
   margin-right: 4px;
+}
+.product_top_filter .product_page_filter span.current {
+  font-weight: 700;
 }
 .product_top_filter .product_page_filter span i {
   margin-right: 10px;
@@ -370,12 +378,13 @@
 .product_top_filter .product_page_filter .selectpickers {
   border: 0px;
   padding: 0px;
-  font-size: 14px;
+  font-size: 16px;
   height: auto;
   line-height: 22px;
 }
 .product_top_filter .product_page_filter .selectpickers span {
-  color: #333;
+  color: #191919;
+  font-size: 16px;
 }
 .product_top_filter .product_page_filter .selectpickers:after {
   display: none;
@@ -1147,7 +1156,7 @@ input[type=number] {
 }
 
 .coupon {
-  font-family: "Figtree", sans-serif;
+  font-family: "Satoshi";
   font-weight: 400;
   position: relative;
   display: inline-block;
@@ -1166,7 +1175,7 @@ input[type=number] {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   color: #fff;
-  background: #54a2fa;
+  background: var(--primary-color);
   font-weight: 600;
   z-index: 1;
 }
@@ -1612,14 +1621,26 @@ input[type=number] {
 }
 
 /*========= shopping_checkout_area css ===========*/
+.products .product_featured_content .featured_content_bottom span.price, .products .product_featured_content .featured_content_bottom .woocommerce-Price-amount.amount {
+  color: #E76B2D;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .medical_featured_pr_item .featured_content_bottom .rating {
   color: #ffdb35;
+  display: none;
 }
 .medical_featured_pr_item .hover_item {
   align-items: center;
 }
 .medical_featured_pr_item .hover_item .yith-wcwl-add-to-wishlist a {
   height: 50px !important;
+  overflow: hidden;
+  text-indent: -170px;
+}
+.medical_featured_pr_item .hover_item .yith-wcwl-add-to-wishlist a.add_to_wishlist.single_add_to_wishlist {
+  text-indent: 0px;
 }
 .medical_featured_pr_item .hover_item a i {
   line-height: 30px !important;
@@ -1658,15 +1679,17 @@ input[type=number] {
   border-bottom: 0 !important;
 }
 .medical-cart thead tr th {
-  padding: 19px 30px !important;
+  padding: 19px 18px !important;
 }
 .medical-cart .product-thumbnail {
   width: 90px;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  border: 0px !important;
 }
 .medical-cart .product-thumbnail a {
   display: block;
+  text-align: center;
 }
 .medical-cart .product-thumbnail a img {
   width: 90px;
@@ -1694,18 +1717,20 @@ input[type=number] {
   border-top-right-radius: 3px !important;
   border-bottom-right-radius: 3px !important;
   color: #fff !important;
-  background: #54a2fa !important;
+  background: var(--hovercolor) !important;
   font-weight: 600;
   z-index: 1;
 }
 
 .select2-container--default .select2-selection--single {
-  color: #666;
-  border: 1px solid #ccc;
+  color: #494849;
+  border: 1px solid rgba(25, 25, 25, 0.12);
   height: 50px;
+  border-radius: 0px;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 50px;
+  padding-left: 20px;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   top: 10px;
@@ -1737,16 +1762,46 @@ input[type=number] {
   color: #7d7d7d;
 }
 .woocommerce form table.shop_table {
-  border: 0;
   border-radius: 0;
+  border: 1px solid rgba(25, 25, 25, 0.12) !important;
+}
+.woocommerce form table.shop_table.woocommerce-checkout-review-order-table {
+  border: 0px !important;
+}
+.woocommerce form table.shop_table.woocommerce-checkout-review-order-table thead tr {
+  border: 0px;
+}
+.woocommerce form table.shop_table.woocommerce-checkout-review-order-table thead tr th {
+  border: 0px !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+.woocommerce form table.shop_table.woocommerce-checkout-review-order-table tbody tr {
+  border: 0px;
+}
+.woocommerce form table.shop_table.woocommerce-checkout-review-order-table tbody tr td {
+  border: 0px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.woocommerce form table.shop_table.woocommerce-checkout-review-order-table tbody tr td .woocommerce-Price-amount {
+  font-weight: 400;
+}
+.woocommerce form table.shop_table.woocommerce-checkout-review-order-table tfoot tr th {
+  padding-left: 0;
+}
+.woocommerce form table.shop_table.woocommerce-checkout-review-order-table tfoot tr td {
+  border-left: 0px;
+  padding-right: 0;
 }
 .woocommerce form table.shop_table .product-name {
   white-space: nowrap;
 }
 
 .woocommerce-checkout-review-order {
-  border: 1px solid #dddddd;
+  border: 0px;
   padding: 30px 40px 40px;
+  background: #f7f6f7;
 }
 
 .woocommerce-checkout #payment {
@@ -1811,6 +1866,16 @@ input[type=number] {
   background-color: var(--secondary-color) !important;
 }
 
+.woocommerce-checkout .woocommerce-checkout-review-order #payment ul.payment_methods li {
+  line-height: 1.7;
+  padding-top: 25px;
+  padding-left: 55px;
+}
+
+.woocommerce-checkout .woocommerce-checkout-review-order #payment ul.payment_methods li:before {
+  top: 0;
+}
+
 ._singleland_quantity {
   background: transparent;
   border: 1px solid rgba(25, 25, 25, 0.12);
@@ -1836,7 +1901,7 @@ input[type=number] {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -1849,6 +1914,12 @@ input[type=number] {
 
 .woocommerce-info {
   border-top-color: var(--primary-color);
+  font-weight: 500;
+}
+
+.woocommerce-info .showcoupon {
+  text-decoration: none;
+  color: #191919;
 }
 
 .woocommerce-info::before {
@@ -1904,7 +1975,7 @@ input[type=number] {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: #076cec;
+  background: var(--headings-color);
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -1971,7 +2042,7 @@ input[type=number] {
   padding-right: 16px;
 }
 .woocommerce div.product span.price {
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 /**
@@ -1992,7 +2063,6 @@ input[type=number] {
 * Price color 
 */
 .woocommerce div.product p.price, .woocommerce div.product span.price {
-  color: var(--primary-color);
   font-size: 24px;
   font-weight: 700;
 }

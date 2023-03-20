@@ -7,7 +7,7 @@
 .product_top_filter {
     display: flex;
     justify-content: space-between;
-    font-family: $pop;
+    font-family: var(--body-font-family);
     margin-bottom: 38px;
 
     .product_page_filter {
@@ -22,9 +22,11 @@
         }
         span {
             line-height: 22px;
-            color: #909090;
+            color: #7A7A7C;
             margin-right: 4px;
-
+            &.current{
+                font-weight: 700;
+            }
             i {
                 margin-right: 10px;
                 vertical-align: middle;
@@ -38,12 +40,13 @@
         .selectpickers {
             border: 0px;
             padding: 0px;
-            font-size: 14px;
+            font-size: 16px;
             height: auto;
             line-height: 22px;
 
             span {
-                color: #333;
+                color: #191919;
+                font-size: 16px;
             }
 
             &:after {
@@ -992,7 +995,7 @@ input[type=number] {
 }
 
 .coupon {
-    font-family: $pop;
+    font-family: 'Satoshi';
     font-weight: 400;
     position: relative;
     display: inline-block;
@@ -1012,7 +1015,7 @@ input[type=number] {
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         color: #fff;
-        background: $blue;
+        background: var(--primary-color);
         font-weight: 600;
         z-index: 1;
     }
@@ -1332,9 +1335,8 @@ input[type=number] {
     padding: 30px 40px 40px;
   
     .shop_table {
-      width: 100%;
-      margin-bottom: 20px;
-  
+        width: 100%;
+        margin-bottom: 20px;
       tr {
         th,
         td {
@@ -1528,3 +1530,9 @@ input[type=number] {
   }
   
   /*========= shopping_checkout_area css ===========*/
+
+  .products .product_featured_content .featured_content_bottom span.price,.products .product_featured_content .featured_content_bottom .woocommerce-Price-amount.amount{
+    color: #E76B2D;
+    font-size: 16px;
+    font-weight: 700;
+  }

@@ -2,6 +2,7 @@
     .featured_content_bottom{
         .rating{
             color: #ffdb35;
+            display: none;
         }
     }
     .hover_item{
@@ -9,6 +10,11 @@
         .yith-wcwl-add-to-wishlist{
            a{
              height: 50px !important;
+             overflow: hidden;
+             text-indent: -170px;
+             &.add_to_wishlist.single_add_to_wishlist{
+              text-indent: 0px;
+             }
            }
         }
         a{

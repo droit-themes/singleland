@@ -9,7 +9,7 @@
         tr{
             border-bottom: 0 !important;
             th{
-              padding: 19px 30px !important;
+              padding: 19px 18px !important;
             }
         }
     }
@@ -18,8 +18,10 @@
         width: 90px;
         padding-left: 0 !important;
         padding-right: 0 !important;
+        border: 0px !important;
             a{
                 display: block;
+                text-align: center;
                 img{
                     width: 90px;
                 }
@@ -49,7 +51,7 @@
         border-top-right-radius: 3px!important;
         border-bottom-right-radius: 3px!important;
         color: #fff!important;
-        background: #54a2fa!important;
+        background: var(--hovercolor) !important;
         font-weight: 600;
         z-index: 1;
     }
