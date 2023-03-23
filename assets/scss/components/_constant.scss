@@ -136,6 +136,16 @@
        font-style: normal;
 }
 
+@font-face {
+  font-family: '_General_Sans';
+  src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
+       url('../fonts/GeneralSans-Semibold.woff') format('woff'),
+       url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
 
 $primary-color: #E76B2D !default;
 $secondary-color: #E76B2D !default;
