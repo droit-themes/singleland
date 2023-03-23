@@ -949,10 +949,18 @@ li.wc-block-grid__product {
     transform: translateX(-50%);
 }
 .woocommerce .star-rating{
-	width: 6em;
+	width: 6.5rem;
+}
+.woocommerce .woo_single_product_area .star-rating{
+	width: auto !important;
+    overflow: visible !important;
+    height: auto;
 }
 .woocommerce .star-rating::before,.woocommerce .star-rating span::before{
 	letter-spacing: 2.1px;
+}
+ins{
+	background: transparent !important;
 }
 
 .selling_pr .dl_pro_woolist_wrapper .dl_woolist_item{
@@ -1837,4 +1845,7 @@ width: 49%;
 .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register{
     border: 1px solid rgba(25, 25, 25, 0.12);
     border-radius: 0px;
+}
+.headphone_features_item .infobox-container.dl_single_info_box{
+	background: linear-gradient(163.15deg, rgba(255, 255, 255, 0) -16.73%, #FFFFFF 88.38%);
 }
