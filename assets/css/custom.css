@@ -647,29 +647,25 @@ a#cancel-comment-reply-link {
   z-index:5;
   background: #E76B2D;
 }
+.theme-list-view-wrapper .add_to_wishlist{
+    text-decoration: none;
+}
 .theme-list-view-wrapper .add_to_wishlist i {
-    margin-left: -4px;
-    border-radius: 3px;
-    width: 47px;
-    height: 47px;
-    background: #f5f5f5 !important;
     text-align: center;
     color: #242424;
     line-height: 47px;
     transition: all 0.2s;
 }
 .theme-list-view-wrapper .add_to_wishlist i:before{
-	color: #242424 !important;
+	color: #191919 !important;
 }
-.theme-list-view-wrapper .add_to_wishlist i:hover{
-	background: #066CEC !important;
+.theme-list-view-wrapper .add_to_wishlist i:hover,.theme-list-view-wrapper .add_to_wishlist:hover{
+	background: #E76B2D !important;
 }
-.theme-list-view-wrapper .add_to_wishlist i:hover:before{
+.theme-list-view-wrapper .add_to_wishlist i:hover:before,.theme-list-view-wrapper .add_to_wishlist:hover i:before{
 	color: #fff !important;
 }
-.woocommerce div.product span.price bdi{
-	font-weight:500;
-}
+
 
 .nice-select{
     border: solid 1px #e8e8e8 !important;
@@ -1105,7 +1101,7 @@ ins{
 	margin-bottom: 0px !important;
 }
 .medical_featured_pr_list_item .product_featured_content .pr_button{
-	color: #54a2fa;
+	color: #E76B2D;
 }
 .woocommerce div.product div.images img{
 	width: auto;

@@ -504,13 +504,13 @@
 
         h3 {
             &:hover {
-                color: $blue;
+                color: #E76B2D;
             }
         }
 
         p {
-            line-height: 26px;
-            color: $pcolor;
+            line-height: 28px;
+            color: #494849;
             padding-top: 15px;
         }
 
@@ -531,9 +531,9 @@
 
         a {
             border: 1px solid #dcd9d9;
-
+            display: flex;
             &:hover {
-                border-color: $blue;
+                border-color: #E76B2D;
             }
         }
     }

@@ -77,16 +77,16 @@
     padding-top: 28px;
     position: relative;
     h6{
-        color: #7A7A7C;
-        font-size: 18px;
-        font-family: var(--body-font-family);
+        font-size: 15px;
         font-weight: 400;
-        letter-spacing: 1.05px;
+        color: #7a7a7c;
+        font-family: var(--body-font-family);
+        letter-spacing: 0px;
         margin-bottom: 12px;
         transition: color 0.2s linear;
     }
     h3{
-        font-size: 22px;
+        font-size: 24px;
         font-family: var(--body-font-family);
         color: var(--headings-color);
         line-height: 1;

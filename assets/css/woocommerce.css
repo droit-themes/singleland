@@ -78,16 +78,16 @@
   position: relative;
 }
 .product_featured_content h6 {
-  color: #7A7A7C;
-  font-size: 18px;
-  font-family: var(--body-font-family);
+  font-size: 15px;
   font-weight: 400;
-  letter-spacing: 1.05px;
+  color: #7a7a7c;
+  font-family: var(--body-font-family);
+  letter-spacing: 0px;
   margin-bottom: 12px;
   transition: color 0.2s linear;
 }
 .product_featured_content h3 {
-  font-size: 22px;
+  font-size: 24px;
   font-family: var(--body-font-family);
   color: var(--headings-color);
   line-height: 1;
@@ -742,11 +742,11 @@
   padding-top: 0;
 }
 .medical_featured_pr_list_item .product_featured_content h3:hover {
-  color: #54a2fa;
+  color: #E76B2D;
 }
 .medical_featured_pr_list_item .product_featured_content p {
-  line-height: 26px;
-  color: #4d4d4d;
+  line-height: 28px;
+  color: #494849;
   padding-top: 15px;
 }
 .medical_featured_pr_list_item .product_featured_content .pr_button {
@@ -763,9 +763,10 @@
 }
 .medical_featured_pr_list_item .hover_item a {
   border: 1px solid #dcd9d9;
+  display: flex;
 }
 .medical_featured_pr_list_item .hover_item a:hover {
-  border-color: #54a2fa;
+  border-color: #E76B2D;
 }
 .medical_featured_pr_list_item:hover .hover_item a {
   opacity: 1;
@@ -1650,17 +1651,19 @@ input[type=number] {
 }
 
 .theme-list-view-wrapper .add_to_wishlist {
-  margin-left: 18px !important;
-  width: 40px;
-  height: 40px !important;
-  border-radius: 50% !important;
-  background: #c1c1c1 !important;
+  margin-left: 12px !important;
+  border-radius: 0px !important;
+  background: #c1c1c13b !important;
   color: #fff !important;
   font-size: 16px !important;
+  display: inline-block;
+  text-align: center;
+  padding: 0px 16px;
 }
 .theme-list-view-wrapper .add_to_wishlist i {
-  margin-left: -4px;
+  margin-left: 0px;
   line-height: 22px;
+  background: transparent;
 }
 .theme-list-view-wrapper .add_to_wishlist i::before {
   color: var(--color-white) !important;
@@ -1975,14 +1978,14 @@ input[type=number] {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: var(--headings-color);
+  background: var(--hovercolor);
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
 .hover_btn:hover {
   color: #fff;
-  border-color: #076cec;
+  border-color: var(--hovercolor);
 }
 .hover_btn:hover span {
   width: 60rem;
@@ -2005,13 +2008,13 @@ input[type=number] {
 }
 
 .border_radius {
-  border-radius: 3px;
+  border-radius: 0px;
 }
 
 .strock_btn {
-  border: 1px solid #54a2fa;
+  border: 1px solid rgba(25, 25, 25, 0.12);
   background: transparent;
-  color: #54a2fa;
+  color: #191919;
   padding: 4px 39px 5px;
 }
 
