@@ -849,7 +849,7 @@ font-weight: 600;
 	padding-left:0px;
 }
 .header-mini-cart{
-	padding:10px !important;
+	padding: 30px !important;
 }
 .woocommerce ul.product_list_widget li img{
 	width: 70px !important;
@@ -921,11 +921,24 @@ li.wc-block-grid__product {
     border-top-right-radius: 3px!important;
     border-bottom-right-radius: 3px!important;
     color: #fff!important;
-    background: #54a2fa!important;
+    background: #191919!important;
+    border: 1px solid #191919;
+}
+.header-cart .button.wc-forward + .button.wc-forward{
+    background: transparent !important;
+    color: #191919 !important;
+}
+.header-cart .button.wc-forward + .button.wc-forward:hover{
+    background: #191919 !important;
+    color: #fff !important;
+}
+.singleland_cart .header-mini-cart p{
+	margin-top: 10px;
 }
 
 .woocommerce-mini-cart__total.total.d-flex.justify-content-between {
     margin-top: 15px !important;
+    color: #191919;
 }
 
 .medical-cart thead {
@@ -1120,7 +1133,7 @@ ins{
 }
 .woocommerce a.remove{
 	margin-top: 0px;
-    line-height: inherit;
+    line-height: 1;
 }
 .menu .menu-item i.ti-angle-down{
 	font-size: 12px;
@@ -1861,4 +1874,13 @@ width: 49%;
 }
 .headphone_features_item .infobox-container.dl_single_info_box{
 	background: linear-gradient(163.15deg, rgba(255, 255, 255, 0) -16.73%, #FFFFFF 88.38%);
+}
+
+.header-mini-cart .product_list_widget .mini_cart_item a{
+    color: #191919;
+    font-weight: 600;
+    font-size: 16px;
+}
+.js,.page-template-elementor_canvas{
+	overflow-x:hidden;
 }
