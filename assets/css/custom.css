@@ -447,7 +447,15 @@ font-family: 'Figtree', sans-serif;
 
 
 .wp-block-search__inside-wrapper{
-    margin-bottom:40px;
+    margin-bottom: 0px;
+    background: #f1f0f5;
+    border: 0px;
+ }
+ .wp-block-search__button-inside button.wp-block-search__button{
+ 	display: block;
+    background: transparent;
+    padding-top: 0px;
+    border: 0px;
  }
  .logged-in.admin-bar .navbar_fixed .navbar {
     margin-top: 32px !important;
@@ -1201,17 +1209,18 @@ ins{
     margin-bottom: 5px;
 }
 .wp-block-latest-posts.wp-block-latest-posts__list li a{
-	font-size: 15px;
+	font-size: 16px;
     line-height: 1.35;
     font-weight: 600;
     color: #06163a;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     transition: color 0.2s linear;
+    display: block;
 }
 
 .wp-block-latest-posts.wp-block-latest-posts__list li .wp-block-latest-posts__post-date{
 	color: #85859c;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -1234,6 +1243,7 @@ button.wp-block-search__button {
 .sidebar_right.blog{
     padding-left:30px !important;
 }
+
 .wishlist_table.wishlist_view th,.woocommerce table.shop_tablewishlist_view th{
  	font-size: 18px;
     font-weight: 600 !important;
@@ -1376,7 +1386,14 @@ span.post_date_loop {
 .breadcrumbs span {
     color: #323433;
 }
-
+@media (max-width: 991px){
+	.sidebar_right.blog{
+    	padding-left: 10px !important;
+    }
+    .text-white .page-title, .text-white h2{
+    	font-size: 42px;
+    }
+}
 /*==== e-commerce css ===*/
 .sidebar_right.shop .widget{
 	background: #F7F9FB;
@@ -1603,7 +1620,7 @@ span.post_date_loop {
         right: 5px;
     }
     .sec_padding {
-        padding-top: 40px;
+        padding-top: 80px;
         padding-bottom: 60px;
     }
     .menu>.nav-item .mobile_dropdown_icon{
@@ -1679,7 +1696,7 @@ span.post_date_loop {
 }
 .woocommerce div.product form.cart .button{
 	cursor:pointer !important;
-	background:#E76B2D;
+	background:#E76B2D !important;
 	opacity:1;
 	padding: 15px 68px!important;
     border-radius: 0px;
