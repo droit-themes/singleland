@@ -1851,7 +1851,7 @@ width: 49%;
 }
 .comment-form .form-group input,
 .comment-form .form-group textarea {
-	border-color: #afafaf;
+	border-color: #e5e5e5;
 }
 .comment-form .form-group:not(:last-child) {
 	margin-bottom: 20px;

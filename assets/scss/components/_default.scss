@@ -168,3 +168,12 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     border: 1px solid rgba(25, 25, 25, 0.12);
     border-radius: 0px;
 }
+
+table tr {
+    border-top: 1px solid #dfe2e7;
+    line-height: 40px;
+    text-align: center;
+}
+.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th,.wp-block-table td,.wp-block-table th{
+    border-color: #dfe2e7;
+}
