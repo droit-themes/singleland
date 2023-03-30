@@ -8,7 +8,7 @@
         padding-left: 15px !important;
     }
     @media (max-width:991px) {
-        max-width: 320px;
+        max-width: 315px;
         margin-top: 50px;
     }
     @media (max-width:576px) {
@@ -53,8 +53,8 @@
     }
     a.post-thumbnail{
         display: flex;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
         overflow: hidden;
         background: #000;
         img{
@@ -335,6 +335,8 @@ blockquote{
     &.has-cyan-bluish-gray-background-color{
         blockquote{
             max-width: 80%;
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
     }
 }
@@ -399,7 +401,7 @@ blockquote{
         text-align: center;
         font-size: 16px;
         color: #7b8a9e;
-        border-radius: 50%;
+        border-radius: 0px;
         text-decoration: none;
         i{
             &::before{
@@ -493,14 +495,14 @@ blockquote{
         font-size: 16px !important;
         line-height: 34px;
         color: var(--body-color);
-        border-radius: 3px;
+        border-radius: 0px;
         background: #efefef;
         text-align: center;
         padding: 0 20px;
         display: inline-block;
         text-decoration: none;
         font-weight: 500;
-        margin: 5px 3px;
+        margin: 5px 3px 7px;
         transition: all 0.2s linear;
         &:hover{
             background: var(--hovercolor);
@@ -1098,11 +1100,15 @@ dl{
         border: 0;
         padding: 11px 23px;
         cursor: pointer;
-        background: var(--primary-color);
+        background: var(--primary-color) !important;
         color: var(--color-white);
         font-size: 16px;
         line-height: 29px;
         font-weight: 500;
+        &:hover{
+            background: #191919 !important;
+            color: #FFFFFF;
+        }
     }
     .logged-in-as{
         margin-top: -20px;

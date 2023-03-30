@@ -135,12 +135,16 @@
             position: relative;
             text-decoration: none;
             &.dropdown-toggle::after{
-                content: '\f078';
-                font-family: 'FontAwesome';
-                display: inline-flex;
-                border: 0px;
-                font-size: 10px;
-                margin-left: 4px;
+                display: none;
+                @media (min-width: 1024px){
+                    content: '\f078';
+                    font-family: 'FontAwesome';
+                    display: inline-flex !important;
+                    border: 0px;
+                    font-size: 10px;
+                    margin-left: 4px;
+                    display: block;
+                }
             }
 
             &:before {
@@ -200,13 +204,16 @@
                         transition: color 0.2s linear;
                         display: block;
                         &.dropdown-toggle::after{
-                            content: '\f105';
-                            font-family: 'FontAwesome';
-                            display: inline-flex;
-                            border: 0px;
-                            font-size: 12px;
-                            position: absolute;
-                            right: 11px;
+                            display: none;
+                            @media (min-width: 1024px){
+                                content: '\f105';
+                                font-family: 'FontAwesome';
+                                display: inline-flex;
+                                border: 0px;
+                                font-size: 12px;
+                                position: absolute;
+                                right: 11px;
+                            }
                         }
                     }
 
@@ -667,7 +674,7 @@
 		position: absolute;
 		height: 1px;
 		width: 50%;
-		background: var(--primary-color);
+		background: #4d4d4d;
 		opacity: 1;
 		transform: rotate(0deg);
 		transition: 0.25s ease-in-out;
@@ -792,7 +799,6 @@
         top: 100%;
         background: #fff;
         z-index: 8;
-        display: none;
         right: 0;
         box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.04);
         border-top: 1px solid #ededed;

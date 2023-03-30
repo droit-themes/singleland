@@ -317,12 +317,18 @@
   text-decoration: none;
 }
 .menu > .nav-item > .nav-link.dropdown-toggle::after {
-  content: "\f078";
-  font-family: "FontAwesome";
-  display: inline-flex;
-  border: 0px;
-  font-size: 10px;
-  margin-left: 4px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .menu > .nav-item > .nav-link.dropdown-toggle::after {
+    content: "\f078";
+    font-family: "FontAwesome";
+    display: inline-flex !important;
+    border: 0px;
+    font-size: 10px;
+    margin-left: 4px;
+    display: block;
+  }
 }
 .menu > .nav-item > .nav-link:before {
   content: "";
@@ -381,13 +387,18 @@
   display: block;
 }
 .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link.dropdown-toggle::after {
-  content: "\f105";
-  font-family: "FontAwesome";
-  display: inline-flex;
-  border: 0px;
-  font-size: 12px;
-  position: absolute;
-  right: 11px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link.dropdown-toggle::after {
+    content: "\f105";
+    font-family: "FontAwesome";
+    display: inline-flex;
+    border: 0px;
+    font-size: 12px;
+    position: absolute;
+    right: 11px;
+  }
 }
 .menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item.active > .nav-link {
   color: var(--hovercolor);
@@ -770,7 +781,7 @@
   position: absolute;
   height: 1px;
   width: 50%;
-  background: var(--primary-color);
+  background: #4d4d4d;
   opacity: 1;
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
@@ -871,7 +882,6 @@
     top: 100%;
     background: #fff;
     z-index: 8;
-    display: none;
     right: 0;
     box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.04);
     border-top: 1px solid #ededed;
@@ -1010,7 +1020,7 @@
 }
 @media (max-width: 991px) {
   .sidebar_right {
-    max-width: 320px;
+    max-width: 315px;
     margin-top: 50px;
   }
 }
@@ -1059,8 +1069,8 @@
 }
 .blog_post_item a.post-thumbnail {
   display: flex;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   overflow: hidden;
   background: #000;
 }
@@ -1351,6 +1361,8 @@ blockquote cite br {
 
 .wp-block-pullquote.has-cyan-bluish-gray-background-color blockquote {
   max-width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .blockquote_two:before {
@@ -1411,7 +1423,7 @@ blockquote cite br {
   text-align: center;
   font-size: 16px;
   color: #7b8a9e;
-  border-radius: 50%;
+  border-radius: 0px;
   text-decoration: none;
 }
 .pagination .page-numbers i::before {
@@ -1494,14 +1506,14 @@ blockquote cite br {
   font-size: 16px !important;
   line-height: 34px;
   color: var(--body-color);
-  border-radius: 3px;
+  border-radius: 0px;
   background: #efefef;
   text-align: center;
   padding: 0 20px;
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
-  margin: 5px 3px;
+  margin: 5px 3px 7px;
   transition: all 0.2s linear;
 }
 .tagcloud a:hover, .tagcloud .tag-cloud-link:hover, .wp-block-tag-cloud a:hover, .wp-block-tag-cloud .tag-cloud-link:hover {
@@ -2077,11 +2089,15 @@ dl dd a:hover {
   border: 0;
   padding: 11px 23px;
   cursor: pointer;
-  background: var(--primary-color);
+  background: var(--primary-color) !important;
   color: var(--color-white);
   font-size: 16px;
   line-height: 29px;
   font-weight: 500;
+}
+.comment-form .btn-comment-form:hover {
+  background: #191919 !important;
+  color: #FFFFFF;
 }
 .comment-form .logged-in-as {
   margin-top: -20px;
@@ -2891,7 +2907,6 @@ table tr td {
 }
 
 .breadcrumb_content {
-  max-width: 780px;
   margin: 0 auto;
 }
 
@@ -2926,6 +2941,16 @@ input[type=text], input[type=email], input[type=url], input[type=password], inpu
   color: var(--body-color);
   border: 1px solid rgba(25, 25, 25, 0.12);
   border-radius: 0px;
+}
+
+table tr {
+  border-top: 1px solid #dfe2e7;
+  line-height: 40px;
+  text-align: center;
+}
+
+.wp-block-table.is-style-stripes td, .wp-block-table.is-style-stripes th, .wp-block-table td, .wp-block-table th {
+  border-color: #dfe2e7;
 }
 
 :root {

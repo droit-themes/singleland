@@ -94,14 +94,14 @@
         width: 0;
         height: 0;
         border-radius: 50%;
-        background: var(--headings-color);
+        background: var(--hovercolor);
         transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
         transform: translate(-50%, -50%);
         z-index: -1;
     }
     &:hover{
         color: #fff;
-        border-color: $hovercolor;
+        border-color: var(--hovercolor);
         span{
             width: 60rem;
             height: 60rem;
@@ -121,13 +121,13 @@
     background: #1e1e1e;
 }
 .border_radius{
-    border-radius: 3px;
+    border-radius: 0px;
 }
 
 .strock_btn{
-    border: 1px solid $blue;
+    border: 1px solid rgba(25,25,25,.12);
     background: transparent;
-    color: $blue;
+    color: #191919;
     padding: 4px 39px 5px;
 }
 

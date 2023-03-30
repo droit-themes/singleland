@@ -1,15 +1,17 @@
 .theme-list-view-wrapper{
     .add_to_wishlist{
-        margin-left: 18px !important;
-        width: 40px;
-        height: 40px !important;
-        border-radius: 50% !important;
-        background: #c1c1c1 !important;
+        margin-left: 12px !important;
+        border-radius: 0px !important;
+        background: #c1c1c13b !important;
         color: #fff !important;
         font-size: 16px !important;
+        display: inline-block;
+        text-align: center;
+        padding: 0px 16px;
         i{
-            margin-left: -4px;
+            margin-left: 0px;
             line-height: 22px;
+            background: transparent;
             &::before{
                 color: var(--color-white) !important;
             }
