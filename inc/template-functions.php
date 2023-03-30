@@ -340,7 +340,7 @@ if(!function_exists('_singleland_footer')){
 		if ( $footer_id != '' && class_exists( '\Elementor\Plugin' ) ) {
 			echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $footer_id );
 		} else {
-			$footer_text = singleland_opt('footer_copyright_txt', 'Copyright &copy; 2022 <a href="https://droitthemes.com/">DroitThemes</a> | All rights reserved');
+			$footer_text = singleland_opt('footer_copyright_txt', 'Copyright &copy; 2023 <a href="https://droitthemes.com/">DroitThemes</a> | All rights reserved');
 			?>
 			<footer id="colophon" class="site-footer text-center">
 				<div class="site-info container">
