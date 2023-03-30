@@ -335,6 +335,8 @@ blockquote{
     &.has-cyan-bluish-gray-background-color{
         blockquote{
             max-width: 80%;
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
     }
 }

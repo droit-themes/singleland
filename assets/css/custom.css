@@ -1884,3 +1884,9 @@ width: 49%;
 .js,.page-template-elementor_canvas{
 	overflow-x:hidden;
 }
+
+@media (max-width: 1024px){
+    .sub-menu {
+        display: block;
+    }
+}

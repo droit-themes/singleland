@@ -87,23 +87,9 @@ jQuery(function () {
 		return false;
 	});
 
-	$('.navbar-toggler').on('click', function () {
-		if ($('.navbar-toggler').hasClass('collapsed')) {
-			$(this).removeClass('collapsed');
-		} else {
-			$(this).addClass('collapsed');
-		}
-
-		if ($('.navbar-collapse').not('show')) {
-			$('.navbar-collapse').removeClass('show').slideToggle(700);
-		} else {
-			$('.navbar-collapse').addClass('show').slideUp(700);
-		}
-	});
-
 	$(window).resize(function() {
 		if (window.matchMedia("(max-width: 1024px)").matches) {
-			$('.drdt_navmenu li i').on('click', function(e){
+			$('.drdt_navmenu li i,.menu li > a:after').on('click', function(e){
 				$(this).siblings('.sub-menu').toggle(700);
 				$(this).parents('li').siblings('li').find('.sub-menu').slideUp(700);
 			});
