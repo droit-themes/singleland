@@ -974,7 +974,8 @@ li.wc-block-grid__product {
     height: auto;
 }
 .woocommerce .star-rating::before,.woocommerce .star-rating span::before{
-	letter-spacing: 2.1px;
+	letter-spacing: 2.7px;
+    font-size: 18px;
 }
 ins{
 	background: transparent !important;
@@ -1851,7 +1852,7 @@ width: 49%;
 }
 .comment-form .form-group input,
 .comment-form .form-group textarea {
-	border-color: #e5e5e5;
+	border-color: #afafaf;
 }
 .comment-form .form-group:not(:last-child) {
 	margin-bottom: 20px;
@@ -1884,7 +1885,9 @@ width: 49%;
 .js,.page-template-elementor_canvas{
 	overflow-x:hidden;
 }
-
+.ub-btn{
+	overflow: hidden;
+}
 @media (max-width: 1024px){
     .sub-menu {
         display: block;
