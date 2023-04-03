@@ -136,7 +136,7 @@
             text-decoration: none;
             &.dropdown-toggle::after{
                 display: none;
-                @media (min-width: 1024px){
+                @media (min-width: 1025px){
                     content: '\f078';
                     font-family: 'FontAwesome';
                     display: inline-flex !important;

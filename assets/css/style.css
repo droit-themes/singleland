@@ -319,7 +319,7 @@
 .menu > .nav-item > .nav-link.dropdown-toggle::after {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .menu > .nav-item > .nav-link.dropdown-toggle::after {
     content: "\f078";
     font-family: "FontAwesome";

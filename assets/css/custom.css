@@ -1204,7 +1204,12 @@ ins{
 
 @media (max-width: 1024px){
     li.submenu a + i {
-        top: 19px;
+        top: 14px;
+        font-size: 15px;
+        right: 15px;
+    }
+    .drdt-nav-menu__layout-horizontal ul.drdt_navmenu li{
+    	padding: 5px 0px;
     }
 }
 /* sidebar block   */
@@ -1892,4 +1897,452 @@ width: 49%;
     .sub-menu {
         display: block;
     }
+    .drdt-nav-menu .menu>.nav-item>.nav-link{
+        color: #191919 !important;
+    }
+}
+
+.drbt_menu_offcanvas_wrap .menu > .nav-item.submenu .dropdown-menu{
+	display: none; 
+    opacity: 1;
+    visibility: visible;
+    transition: inherit;
+    transform: translateY(0px);
+}
+.drbt_menu_offcanvas_wrap .menu>.nav-item .mobile_dropdown_icon {
+    display: block;
+}
+
+/* customizer css  */
+.gradient_btn a {
+	background: linear-gradient(91.58deg, #7F92FF 0.45%, #9774FF 98.85%);
+}
+
+.gradient_btn a:hover {
+	background: linear-gradient(91.58deg, #9774FF 0.45%, #7F92FF 98.85%);
+}
+
+.singleland_faq {
+	border-bottom: 1px solid rgba(15, 21, 37, 0.12);
+}
+
+.singleland_faq .dl_accordion_item .droit-icon {
+		height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(91.58deg, #7F92FF 0.45%, #9774FF 98.85%);
+    border-radius: 50px;
+	  color: #fff;
+}
+
+.singleland_faq .droit-advance-faq .droit-icon i {
+	font-size: 14px;
+}
+
+.singleland_social_icon .elementor-social-icon:hover {
+	background: linear-gradient(91.58deg, #7F92FF 0.45%, #9774FF 98.85%);
+}
+
+.singleland_subs .dl_pro_subscribe_form .dl_cu_btn {
+	background: linear-gradient(91.58deg, #7F92FF 0.45%, #9774FF 98.85%);
+	padding: 28px 31px;
+	position: relative;
+}
+
+.singleland_subs .dl_pro_subscribe_form .dl_cu_btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://singleland.droitlab.com/wp-content/uploads/2023/03/PaperPlaneTilt.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+}
+
+.singleland_subs .dl_pro_subscribe_form_action.dl-pro-sub-inline .dl_form_control_wrap {
+	margin-bottom: 0;
+}
+
+.singleland_subs .dl_form_control_wrap .dl_form_control {
+	background: transparent;
+}
+
+.singleland_ilist .elementor-icon-list-text {
+	position: relative;
+}
+
+.singleland_ilist .elementor-icon-list-text::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.singleland_ilist .elementor-icon-list-text:hover::after {
+	opacity: 1;
+}
+
+.singleland_counter .elementor-counter .elementor-counter-number-prefix {
+	display: none;
+}
+
+.singleland_counter .elementor-counter-title {
+	text-align: left !important;
+}
+
+.singleland_subs.global .dl_pro_subscribe_form .dl_cu_btn {
+	background: #E76B2D !important;
+}
+
+.singleland_news_ticker .marquee .slide {
+    padding-top: 25px;
+    padding-bottom: 8px;
+}
+
+.singleland_news_ticker .marquee .slide h1 img {
+	margin-right: 20px;
+}
+
+.singleland_slider .slick-dots li button {
+    width: 12px;
+}
+
+.singleland_slider .slick-dots {
+    position: relative;
+}
+
+.singleland_contact_form .dl_contact_form_wrapper.dl_cf7_form_02 .wpcf7-form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(25, 25, 25, 0.12);
+	padding-left: 0;
+}
+
+.singleland_contact_form .dl_contact_form_wrapper.dl_cf7_form_02 textarea.wpcf7-form-control {
+	    min-height: 120px;
+}
+
+@media (min-width: 1025px){
+	.singleland_nav .menu > .nav-item {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.singleland_nav.home_one .menu > .nav-item > .nav-link:before {
+	background: linear-gradient(91.58deg, #7F92FF 0.45%, #9774FF 98.85%);
+}
+
+.fixed_menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.admin-bar .drdt_sticky_fixed {
+	top: 30px !important;
+}
+
+.singleland_product .dl_woolist_item_content .dl_post_category {
+	display: none;
+}
+
+.singleland_product .dl_add_cart {
+	display: none;
+}
+
+.singleland_product .dl_pro_woolist_wrapper .dl_woolist_item_content {
+	text-align: center;
+	display: flex;
+  flex-direction: column;
+}
+
+.singleland_product .dl_woolist_item .dl_woolist_item_content .dl_post_ratting {
+	display: flex;
+  justify-content: center;
+	order: -1;
+}
+
+
+.dl_single_testimonial_slider.style_01 .dl_client_info{
+	margin-top:10px;
+}
+
+.singleland_tab_faq .faq_tab .nav-tabs {
+	display: flex;
+}
+
+.singleland_tab_faq .faq_innar .faq_content {
+	margin-left: 0;
+	margin-top: 40px;
+}
+
+.singleland_tab_faq .faq_tab {
+	margin-top: 0;
+	background: transparent;
+	padding: 0;
+}
+
+.singleland_tab_faq .nav-tabs .nav-link.active {
+	background: transparent;
+}
+
+.singleland_tab_faq .faq_tab .nav-item .nav-link {
+	padding: 0;
+}
+
+.singleland_tab_faq .faq_tab .nav-item {
+	margin-right: 45px;
+}
+
+.singleland_tab_faq .faq_content .tab-pane .card .card-header .btn {
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: 'Satoshi';
+}
+
+.singleland_tab_faq .faq_content .tab-pane .card:first-child {
+	border-top: 1px solid #eef1f6;
+}
+
+.singleland_tab_faq .faq_content .tab-pane .card .card-header h5 {
+	margin: 0;
+}
+
+.singleland_tab_faq .faq_content .tab-pane .card .card-header .btn i {
+	    font-size: 15px;
+    	color: rgba(231, 107, 45, 1);
+}
+
+/* .singleland_nav.home_one .menu > .nav-item.active .nav-link {
+	color: #7F92FF;
+} */
+
+.singleland_nav.home_one .menu>.nav-item.submenu .dropdown-menu .nav-item.active>.nav-link {
+	color: #7F92FF;
+}
+
+.singleland_subs_two .dl_pro_subscribe_form .dl_form_control {
+	background: #1B1B1B;
+}
+
+.singeland_btn_2 a {
+	overflow: hidden;
+}
+
+.singleland_nav.home_two .menu > .nav-item > .nav-link:before {
+	background: #EB451A;
+}
+
+.singleland_subs.home_two .dl_pro_subscribe_form .dl_cu_btn {
+	background: #EB451A;
+}
+
+.singleland_cart .header-cart .cart-btn.nav-link .num {
+		background: #191919;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: absolute;
+    right: -12px;
+    top: -7px;
+	  font-size: 14px;
+}
+
+.singleland_cart .icon-cart:before {
+	color: rgba(25, 25, 25, 1);
+	font-weight: 600;
+}
+
+.singleland_cart .header-mini-cart p {
+	margin-bottom: 0;
+}
+
+.singleland_cart.two .icon-cart:before {
+	color: rgba(229, 229, 229, 1);
+}
+
+.singleland_cart.two .header-cart .cart-btn.nav-link .num {
+	background: rgba(229, 229, 229, 1);
+	color: #141414;
+}
+
+.drdt_sticky_fixed .singleland_cart.two .icon-cart:before {
+	color: rgba(25, 25, 25, 1);
+}
+
+.drdt_sticky_fixed .header_user .elementor-icon svg {
+	fill: #141414 !important;
+}
+
+.drdt_sticky_fixed .singleland_cart.two .h_menu_cart svg path {
+	color: #141414 !important;
+	stroke: #141414 !important;
+}
+
+.drdt_sticky_fixed .singleland_cart.two .h_menu_cart .num {
+	background: #141414;
+  color: #fff;
+}
+
+.singeland_btn_2 .ub-btn:hover {
+	border-color: #fff !important;
+}
+
+.drdt_sticky_fixed .singeland_btn_2 .ub-btn:hover {
+	color: #fff !important;
+}
+
+.drdt_sticky_fixed .singeland_btn_2 .elementor-button.ub-animation-left2right::after {
+	background-color: #141414 !important;
+}
+
+.singeland_btn_2 .three_d_btn2::before {
+	background-color: inherit;
+}
+
+.singleland_subs.headphone .dl_pro_subscribe_form .dl_cu_btn {
+	background-color: #111029 !important;
+	background: transparent;
+}
+
+.singleland_subs.headphone .dl_form_control_wrap .dl_form_control {
+	background: #fff;
+}
+
+.singleland_ilist.headphone .elementor-icon-list-text::after {
+	background: #111029;
+}
+
+.headphone_social .elementor-social-icon:hover {
+	border-color: transparent !important;
+}
+.round_circle.elementor-widget-divider .elementor-divider{
+	position: relative;
+}
+.round_circle .elementor-divider-separator:before{
+	content: "";
+	width: 13px;
+	height: 13px;
+	background: #F9F9F9;
+	position: absolute;
+	left: 0;
+	top: -5px;
+	border-radius: 50%;
+}
+.round_circle.left .elementor-divider-separator:before{
+	left: auto;
+	right: 0;
+}
+.specification_list .elementor-icon-list-text span{
+	color: #F9F9F9;
+}
+
+.product_featured_content h3 {
+	font-size: 22px;
+}
+
+.singleland_footer_social .elementor-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 1640px) {
+	.home_ele_ride .dl_parallax_element {
+		left: 30% !important;
+	}
+}
+
+@media(max-width: 1366px) {
+	.home_ele_ride .dl_parallax_element > .layer > * {
+		width: 65% !important;
+	}
+}
+
+@media(max-width: 1024px) {
+	.home_ele_ride .dl_parallax_element > .layer > * {
+		width: 0 !important;
+	}
+	.singleland_nav .drdt-nav-menu-icon {
+		margin-top: -10px;
+	}
+	.singleland_nav.home_two .drdt-nav-menu-icon svg path {
+		fill: #E5E5E5;
+    stroke: #E5E5E5;
+	}
+	.drdt_sticky_fixed .singleland_nav.home_two .drdt-nav-menu-icon svg path {
+		fill: #141414;
+    stroke: #141414;
+	}
+}
+
+.blog_grid .droit-post__area.blog_grid_masonory {
+ margin-bottom:40px;
+}
+
+.singleland_nav.headphone .menu > .nav-item > .nav-link:before {
+    background: #2563EB;
+}
+
+.img_hover ,
+.img_hover .elementor-widget-container{
+	overflow: hidden;
+}
+
+.img_hover img {
+	transition: .5s;
+}
+
+.img_hover img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 781px){
+	.admin-bar .drdt_sticky_fixed {
+        top: 46px !important;
+    }
+}
+@media (max-width: 600px){
+	.admin-bar .drdt_sticky_fixed {
+        top: 0px !important;
+    }
+}
+.product_featured_content{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.fixed_menu.dark.drdt_sticky_fixed .elementor-element.elementor-element-69bd8dd.elementor-view-default .elementor-icon svg{
+	fill: #111029;
+}
+.fixed_menu .drdt_custom_site_logo img + img,.fixed_menu.drdt_sticky_fixed .drdt_custom_site_logo img {
+	display: none;
+}
+.fixed_menu.drdt_sticky_fixed .drdt_custom_site_logo img + img{
+	display: block;
+}
+.fixed_menu.dark.drdt_sticky_fixed .header-cart svg path{
+	stroke: #111029;
+}
+
+.fixed_menu.dark.drdt_sticky_fixed .h_menu_cart .num{
+	background: #111029;
+	color: #fff;
+}
+.fixed_menu.dark.drdt_sticky_fixed .elementor-element.elementor-element-f41e518 .ub-btn{
+	background: #111029;
+	color: #fff;
 }

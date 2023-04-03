@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_header.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_banner.php';
     require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_footer.php';
-	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_colors.php';
+	// require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_colors.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_blog.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_page.php';
     if(class_exists('WooCommerce')) {
