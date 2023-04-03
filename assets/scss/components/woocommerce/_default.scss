@@ -152,10 +152,11 @@
     .hover_item {
         a{
             line-height: 30px;
+            background: #191919 !important;
             &:hover{
                 i{
                     &::before{
-                        color: var(--secondary-color) !important;
+                        color: #fff !important;
                     }
                 }
             }

@@ -3,7 +3,9 @@
     position: relative;
     z-index: 1;
 }
-
+.woocommerce-shop {
+    background: #F7F7F7;
+}
 .product_top_filter {
     display: flex;
     justify-content: space-between;
@@ -476,7 +478,8 @@
     padding: 40px 30px;
     position: relative;
     margin-bottom: 30px;
-
+    background: #fff;
+    transition: all 0.2s linear;
     .badge {
         right: auto;
         left: 30px;
@@ -509,8 +512,8 @@
         }
 
         p {
-            line-height: 28px;
-            color: #494849;
+            line-height: 30px;
+            color: #7A7A7C;
             padding-top: 15px;
         }
 
@@ -523,6 +526,9 @@
         .wishlist_btn {
             margin-left: 18px;
         }
+        .woocommerce-Price-amount.amount{
+            color: #E76B2D;
+        }
     }
 
     .hover_item {
@@ -530,15 +536,22 @@
         text-align: center;
 
         a {
-            border: 1px solid #dcd9d9;
+            border: 0px solid #dcd9d9;
             display: flex;
+            background: #191919 !important;
             &:hover {
                 border-color: #E76B2D;
+                background: #E76B2D !important;
+                i:before{
+                    color: #fff !important;
+                }
             }
         }
     }
 
     &:hover {
+        background: #FFFFFF;
+        box-shadow: 0px 30px 60px rgba(15, 21, 37, 0.06);
         .hover_item {
             a {
                 opacity: 1;

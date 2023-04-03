@@ -12,6 +12,7 @@
              height: 50px !important;
              overflow: hidden;
              text-indent: -170px;
+             background: #191919 !important;
              &.add_to_wishlist.single_add_to_wishlist{
               text-indent: 0px;
              }
@@ -26,4 +27,11 @@
           }
         }
     }
+}
+.medical_featured_pr_item_style3{
+  .hover_item{
+    a{
+      background: #191919 !important;
+    }
+  }
 }

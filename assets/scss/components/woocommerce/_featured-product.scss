@@ -19,7 +19,7 @@
         margin: 0px 2px;
         i{
             &:before{
-                color: $title;
+                color: #fff;
                 transition: all 0.2s linear;
             }
         }
@@ -77,13 +77,14 @@
     padding-top: 28px;
     position: relative;
     h6{
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 400;
         color: #7a7a7c;
         font-family: var(--body-font-family);
         letter-spacing: 0px;
         margin-bottom: 12px;
         transition: color 0.2s linear;
+        text-transform: capitalize;
     }
     h3{
         font-size: 24px;
@@ -160,6 +161,7 @@
     padding: 40px 0px;
     margin-bottom: 30px;
     transition: all 0.2s;
+    background: #fff;
     .product_featured_img{
         margin-bottom: 0px;
         position: relative;
@@ -182,9 +184,7 @@
         }
     }
 }
-.item_border{
-    border: 1px solid rgba(25, 25, 25, 0.12);
-}
+
 
 .medical_featured_product_area_three{
     position: relative;

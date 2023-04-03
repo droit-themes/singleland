@@ -120,8 +120,8 @@
     > .nav-item {
         margin-left: 30px;
         position: relative;
-        padding-bottom: 40px;
-        padding-top: 40px;
+        padding-bottom: 25px;
+        padding-top: 25px;
         transition: all 0.1s linear;
         @media (max-width:1199px){
             margin-left: 15px;
@@ -385,8 +385,8 @@
         margin-right: 35px;
     }
     .nav-item {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         transition: all 0.1s linear;
         &:not(:last-child){
             margin-right: 20px;
