@@ -2394,6 +2394,8 @@ width: 49%;
 		margin-top: 0;
 	}
 }
-.elementor-section.elementor-section-boxed > .elementor-container {
-    max-width: 1320px;
+@media (min-width: 1400px){
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 1320px !important;
+    }
 }
