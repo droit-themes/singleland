@@ -2369,3 +2369,31 @@ width: 49%;
 .header-mini-cart .product_list_widget .mini_cart_item .cart-product-title-and-price a{
 	line-height: 1.5;
 }
+.woocommerce{
+    background: #f7f7f7;
+}
+.singleland_cart.backpack .h_menu_cart svg path {
+	stroke: #191919;
+  color: #191919;
+}
+
+@media(max-width: 1024px) {
+	.singleland_nav.headphone .drdt-nav-menu-icon svg path {
+		fill: #fff;
+        stroke: #fff;
+	}
+	
+    .drdt_sticky_fixed .singleland_nav.headphone .drdt-nav-menu-icon svg path {
+		fill: #111029;
+        stroke: #111029;
+	}
+}
+
+@media(max-width: 767px){
+	.singleland_nav .drdt-nav-menu-icon {
+		margin-top: 0;
+	}
+}
+.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1320px;
+}
