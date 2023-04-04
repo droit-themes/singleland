@@ -93,7 +93,7 @@
   color: var(--headings-color);
   line-height: 1;
   font-weight: 900;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   transition: color 0.2s linear;
 }
 .product_featured_content .featured_content_bottom {
