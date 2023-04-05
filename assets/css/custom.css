@@ -368,10 +368,11 @@ display:none;
     opacity: 1;
 }
 .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-price {
-    margin-top: -24px;
+    margin-top: -43px;
     padding-left: 0 !important;
     position: relative;
     top: auto;
+    margin-left: 80px !important;
 }
 .sidebar_right .widget ul.wc-block-grid__products li.wc-block-grid__product{
 	margin-bottom: 15px;
@@ -723,7 +724,8 @@ a#cancel-comment-reply-link {
 }
 
 .shop_details_content h2{
-	margin-top:20px !important;
+	margin-top: 15px !important;
+    margin-bottom: 5px;
 }
 
 .woocommerce .star-rating span::before{
@@ -1310,6 +1312,9 @@ button.wp-block-search__button {
 .product_page_per_view .pr_view li+li,.woocommerce div.product .woocommerce-tabs ul.tabs li.pwb_tab_tab,.woocommerce div.product .woocommerce-tabs .panel.woocommerce-Tabs-panel--pwb_tab{
 	display: none !important;
 }
+.product_page_per_view .pr_view li+li{
+	display: inline-block !important;
+}
 .droit-search-box .drdt-input-group input{
 	color: #fff !important;
 }
@@ -1549,7 +1554,7 @@ span.post_date_loop {
 	background: #f5f5f5;
 } */
 .product .woocommerce-Tabs-panel{
-	padding-top: 50px !important;
+	padding-top: 10px !important;
 }
 .product .woocommerce-Tabs-panel .woocommerce-Reviews{
 	padding-top: 0 !important;
@@ -1570,12 +1575,12 @@ span.post_date_loop {
 	background-color: #066CEC !important;
 } */
 .shop_details_content .social-icon li a{
-	width: 40px;
-    height: 40px;
+	width: 48px;
+    height: 48px;
     text-align: center;
-    line-height: 40px;
+    line-height: 48px;
     font-size: 14px;
-    background: #f5f5f5;
+    background: #fff;
     border-radius: 50%;
     display: inline-block;
 }
@@ -1791,7 +1796,7 @@ width: 49%;
 .woocommerce-Price-amount.amount {
     margin-left: 5px;
     font-weight: 600;
-    color: #191919;
+    color: #E76B2D;
 }
 .dl_extra_info .button{
 	margin:0px 04px 0px 04px !important;
@@ -2380,22 +2385,32 @@ width: 49%;
 @media(max-width: 1024px) {
 	.singleland_nav.headphone .drdt-nav-menu-icon svg path {
 		fill: #fff;
-        stroke: #fff;
+    stroke: #fff;
 	}
 	
-    .drdt_sticky_fixed .singleland_nav.headphone .drdt-nav-menu-icon svg path {
+.drdt_sticky_fixed .singleland_nav.headphone .drdt-nav-menu-icon svg path {
 		fill: #111029;
-        stroke: #111029;
+    stroke: #111029;
 	}
 }
-
+.h_price del{
+	opacity: 0.5;
+}
+.products .medical_featured_pr_list_item.item_border.theme-list-view-wrapper .hover_item {
+    top: 50% !important;
+}
+.medical_featured_pr_list_item .pr_button .medical_theme_btn{
+	background: #E76B2D;
+    color: #fff;
+}
+.medical_featured_pr_list_item .pr_button .medical_theme_btn:hover{
+	border-color: #191919;
+}
+.medical_featured_pr_list_item .pr_button .medical_theme_btn span{
+	background: #191919;
+}
 @media(max-width: 767px){
 	.singleland_nav .drdt-nav-menu-icon {
 		margin-top: 0;
 	}
-}
-@media (min-width: 1400px){
-    .elementor-section.elementor-section-boxed > .elementor-container {
-        max-width: 1320px !important;
-    }
 }

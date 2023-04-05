@@ -14,13 +14,6 @@
         <h3><?php echo esc_html(get_the_title(get_the_ID())); ?></h3>
         </a>
         <div class="price"><?php woocommerce_template_loop_price(); ?></div>
-        <div class="rating_star">
-          <?php if ($average = $product->get_average_rating()) : ?>
-             <?php echo '<div class="star-rating " title="'.sprintf(__( 'Rated %s out of 5', 'singleland' ), $average).'"><span style="width:'.( ( $average / 5 ) * 100 ) . '%"><strong itemprop="ratingValue" class="rating"></strong></span></div>'; ?>
-             <span class="star-rating-count"> <?php  printf('(%s)', $product->get_review_count()); ?> </span>
-             <?php endif; ?>
-           
-        </div>
         <p><?php echo esc_html(get_the_excerpt(get_the_ID())); ?></p>
         <div class="pr_button">
             <a href="<?php echo esc_url(get_the_permalink(get_the_ID())); ?>" class="medical_theme_btn strock_btn border_radius hover_btn overflow-hidden position-relative text-decoration-none">
