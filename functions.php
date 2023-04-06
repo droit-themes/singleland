@@ -200,3 +200,30 @@ require_once SINGLELAND_THEMEROOT_DIR . '/inc/init.php';
 require_once SINGLELAND_THEMEROOT_DIR . '/lib/init.php'; 
 
 
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+
+add_action('init', 'add_new_star_rating');
+function add_new_star_rating(){
+	add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 6 );
+}
+// Remove the product description Title
+add_filter( 'woocommerce_product_description_heading', '__return_null' );
+add_filter( 'woocommerce_product_additional_information_heading', '__return_null' );
+
+
+
+function woo_related_products_limit() {
+  global $product;
+	
+	$args['posts_per_page'] = 3;
+	return $args;
+}
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
+  function jk_related_products_args( $args ) {
+	$args['posts_per_page'] = 3; // 4 related products
+	$args['columns'] = 3; // arranged in 2 columns
+	return $args;
+}
+
+
