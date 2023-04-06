@@ -1162,6 +1162,8 @@ ins{
 }
 .dl_woolist_item_thumb a{
 	position: inherit;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .dl-product-cat-grid-item-inner img{
