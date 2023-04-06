@@ -139,6 +139,13 @@
   font-display: swap;
   font-style: normal;
 }
+@font-face {
+  font-family: "ClashGrotesk-Bold";
+  src: url("../fonts/ClashGrotesk-Bold.woff2") format("woff2"), url("../fonts/ClashGrotesk-Bold.woff") format("woff"), url("../fonts/ClashGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
 /**
 * Define All CSS Variable
 * Convert SCSS to CSS Variable
@@ -2710,6 +2717,13 @@ input[type=text], input[type=email], input[type=url], input[type=password], inpu
   font-family: "_General_Sans";
   src: url("../fonts/GeneralSans-Semibold.woff2") format("woff2"), url("../fonts/GeneralSans-Semibold.woff") format("woff"), url("../fonts/GeneralSans-Semibold.ttf") format("truetype");
   font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashGrotesk-Bold";
+  src: url("../fonts/ClashGrotesk-Bold.woff2") format("woff2"), url("../fonts/ClashGrotesk-Bold.woff") format("woff"), url("../fonts/ClashGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-display: swap;
   font-style: normal;
 }

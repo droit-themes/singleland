@@ -147,6 +147,17 @@
 }
 
 
+@font-face {
+  font-family: 'ClashGrotesk-Bold';
+  src: url('../fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+       url('../fonts/ClashGrotesk-Bold.woff') format('woff'),
+       url('../fonts/ClashGrotesk-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
 $primary-color: #E76B2D !default;
 $secondary-color: #E76B2D !default;
 $headding-color: #191919;
