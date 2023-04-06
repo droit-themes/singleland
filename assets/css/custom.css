@@ -1087,7 +1087,7 @@ ins{
     margin: 0 8px;
 }
 .strock_btn{
-	padding: 8px 39px 8px;
+	padding: 9px 39px 9px;
 }
 .product_top_filter{
 	margin-bottom: 35px;
@@ -2402,12 +2402,33 @@ width: 49%;
 .medical_featured_pr_list_item .pr_button .medical_theme_btn{
 	background: #E76B2D;
     color: #fff;
+    border: 0px;
 }
 .medical_featured_pr_list_item .pr_button .medical_theme_btn:hover{
 	border-color: #191919;
 }
 .medical_featured_pr_list_item .pr_button .medical_theme_btn span{
-	background: #191919;
+    display: none;
+}
+.medical_featured_pr_list_item .pr_button .medical_theme_btn:after{
+	content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.7s linear;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: transform;
+    z-index: -1;
+    background: #191919;
+}
+.medical_featured_pr_list_item .pr_button .medical_theme_btn:hover:after{
+	transform: scaleX(1);
+    transform-origin: left;
 }
 @media(max-width: 767px){
 	.singleland_nav .drdt-nav-menu-icon {
