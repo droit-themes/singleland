@@ -402,7 +402,7 @@ if ( !function_exists('singleland_banner_display') ) {
 
 function get_builder_id($arr, $key) {
 	foreach ($arr as $k => $val) {
-		if(in_array($key, $val)){
+		if(!in_array($key, $val)){
 			return $k;
 		}
 	}
