@@ -6,12 +6,27 @@ function singleland_import_files() {
     return array(
 
         array(
-            'import_file_name'             => esc_html__('All Demos', 'singleland'),
+            'import_file_name'             => esc_html__('Light Demos', 'singleland'),
             'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents.xml',
             'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
             'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot.png',
             'import_notice'                => 'All Page Demos',
             'preview_url'                  => 'https://singleland.droitlab.com/',
+            'local_import_redux'           => array(
+                array(
+                    'file_path'   => trailingslashit( get_template_directory() ) . 'inc/demos/settings.json',
+                    'option_name' => 'singleland_opt',
+                ),
+            ),
+        ),
+
+        array(
+            'import_file_name'             => esc_html__('Dark Demos', 'singleland'),
+            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents_dark.xml',
+            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
+            'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot.png',
+            'import_notice'                => 'All Page Demos',
+            'preview_url'                  => 'https://singleland.droitlab.com/dark',
             'local_import_redux'           => array(
                 array(
                     'file_path'   => trailingslashit( get_template_directory() ) . 'inc/demos/settings.json',
