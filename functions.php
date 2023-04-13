@@ -199,16 +199,6 @@ require_once SINGLELAND_THEMEROOT_DIR . '/inc/init.php';
 
 require_once SINGLELAND_THEMEROOT_DIR . '/lib/init.php'; 
 
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
-
-add_action('init', 'add_new_star_rating');
-function add_new_star_rating(){
-	add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 6 );
-}
-
-add_filter( 'woocommerce_product_description_heading', '__return_null' );
-add_filter( 'woocommerce_product_additional_information_heading', '__return_null' );
-
 
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 
