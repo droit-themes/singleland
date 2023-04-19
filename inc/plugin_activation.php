@@ -61,6 +61,12 @@ function singleland_resister_required_plugin() {
         ),
 
         array(
+            'name'               => esc_html__( 'Droit Dark', 'singleland' ),
+            'slug'               => 'droit-dark-mode',
+            'required'           => true,
+        ),
+
+        array(
             'name'               => esc_html__( 'woocommerce', 'singleland' ),
             'slug'               => 'woocommerce',
             'required'           => true,
