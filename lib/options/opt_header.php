@@ -69,6 +69,217 @@ Redux::set_section( 'singleland_opt', array(
     )
 ) );
 
+/**
+* Action button
+*/
+
+// Redux::set_section( 'singleland_opt', array(
+//     'title'            => esc_html__( 'Action Button', 'saasland' ),
+//     'id'               => 'menu_action_btn_opt',
+//     'subsection'       => true,
+//     'icon'             => '',
+//     'fields'           => array(
+//         array(
+//             'title'     => esc_html__( 'Button Visibility', 'saasland' ),
+//             'id'        => 'is_menu_btn',
+//             'type'      => 'switch',
+//             'on'        => esc_html__( 'Show', 'saasland' ),
+//             'off'       => esc_html__( 'Hide', 'saasland' ),
+//         ),
+
+//         array(
+//             'title'     => esc_html__( 'Button label', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Leave the button label field empty to hide the menu action button.', 'saasland' ),
+//             'id'        => 'menu_btn_label',
+//             'type'      => 'text',
+//             'default'   => esc_html__( 'Get Started', 'saasland' ),
+//             'required'  => array( 'is_menu_btn', '=', '1' )
+//         ),
+
+//         array(
+//             'title'     => esc_html__( 'Button URL', 'saasland' ),
+//             'id'        => 'menu_btn_url',
+//             'type'      => 'text',
+//             'default'   => '#',
+//             'required'  => array( 'is_menu_btn', '=', '1' )
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Button Target', 'saasland' ),
+//             'id'        => 'is_target_blank',
+//             'type'      => 'switch',
+//             'on'        => esc_html__( 'On', 'saasland' ),
+//             'off'       => esc_html__( 'Off', 'saasland' ),
+//             'required'  => array( 'is_menu_btn', '=', '1' )
+//         ),
+//         array(
+//             'id'          => 'header_action_btn_typo',
+//             'type'        => 'typography',
+//             'title'       => __('Typography', 'saasland'),
+//             'google'      => true,
+//             'font-backup' => true,
+//             'color'       => false,
+//             'output'      => array('#navbarSupportedContent a.btn_get'),
+//             'units'       => 'px',
+//             'required'  => array( 'is_menu_btn', '=', '1' )
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Button Font Size', 'saasland' ),
+//             'id'        => 'menu_btn_size',
+//             'type'      => 'spinner',
+//             'default'   => '14',
+//             'min'       => '12',
+//             'step'      => '1',
+//             'max'       => '50',
+//             'required'  => array( 'is_menu_btn', '=', '1' )
+//         ),
+
+
+//         /**
+//          * Button colors
+//          * Style will apply on the Non sticky mode and sticky mode of the header
+//          */
+//         array(
+//             'title'     => esc_html__( 'Button Colors', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Button style attributes on normal (non sticky) mode.', 'saasland' ),
+//             'id'        => 'button_colors',
+//             'type'      => 'section',
+//             'indent'    => true,
+//             'required'  => array( 'is_menu_btn', '=', '1' ),
+//         ),
+
+//         array(
+//             'title'     => esc_html__( 'Font color', 'saasland' ),
+//             'id'        => 'menu_btn_font_color',
+//             'type'      => 'color',
+//             'output'    => array( '.header_area .navbar .btn_get' ),
+//         ),
+        
+//         array(
+//             'title'     => esc_html__( 'Border Color', 'saasland' ),
+//             'id'        => 'menu_btn_border_color',
+//             'type'      => 'color',
+//             'mode'      => 'border-color',
+//             'output'    => array( '.header_area .navbar .btn_get' ),
+//         ),
+        
+//         array(
+//             'title'     => esc_html__( 'Background Color', 'saasland' ),
+//             'id'        => 'menu_btn_bg_color',
+//             'type'      => 'color',
+//             'mode'      => 'background',
+//             'output'    => array( '.header_area .navbar .btn_get' ),
+//         ),
+
+//         // Button color on hover stats
+//         array(
+//             'title'     => esc_html__( 'Hover Font Color', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Font color on hover stats.', 'saasland' ),
+//             'id'        => 'menu_btn_hover_font_color',
+//             'type'      => 'color',
+//             'output'    => array( '.header_area .navbar .btn_get:hover' ),
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Hover Border Color', 'saasland' ),
+//             'id'        => 'menu_btn_hover_border_color',
+//             'type'      => 'color',
+//             'mode'      => 'border-color',
+//             'output'    => array( '.header_area .navbar .btn_get:hover' ),
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Hover background color', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Background color on hover stats.', 'saasland' ),
+//             'id'        => 'menu_btn_hover_bg_color',
+//             'type'      => 'color',
+//             'output'    => array(
+//                 'background' => '.header_area .navbar .btn_get:hover',
+//                 'border-color' => '.navbar_fixed .header_area .navbar .btn_get:hover'
+//             ),
+//         ),
+//         array(
+//             'id'     => 'button_colors-end',
+//             'type'   => 'section',
+//             'indent' => false,
+//         ),
+
+//         /*
+//          * Button colors on sticky mode
+//          */
+//         array(
+//             'title'     => esc_html__( 'Sticky Button Style', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Button colors on sticky mode.', 'saasland' ),
+//             'id'        => 'button_colors_sticky',
+//             'type'      => 'section',
+//             'indent'    => true,
+//             'required'  => array( 'is_menu_btn', '=', '1' ),
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Border color', 'saasland' ),
+//             'id'        => 'menu_btn_border_color_sticky',
+//             'type'      => 'color',
+//             'mode'      => 'border-color',
+//             'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Font color', 'saasland' ),
+//             'id'        => 'menu_btn_font_color_sticky',
+//             'type'      => 'color',
+//             'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Background color', 'saasland' ),
+//             'id'        => 'menu_btn_bg_color_sticky',
+//             'type'      => 'color',
+//             'mode'      => 'background',
+//             'output'    => array( '.navbar_fixed.header_area .navbar .btn_get' ),
+//         ),
+
+//         // Button color on hover stats
+//         array(
+//             'title'     => esc_html__( 'Hover font color', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Font color on hover stats.', 'saasland' ),
+//             'id'        => 'menu_btn_hover_font_color_sticky',
+//             'type'      => 'color',
+//             'output'    => array( '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover' ),
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Hover background color', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Background color on hover stats.', 'saasland' ),
+//             'id'        => 'menu_btn_hover_bg_color_sticky',
+//             'type'      => 'color',
+//             'output'    => array(
+//                 'background' => '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover',
+//             ),
+//         ),
+//         array(
+//             'title'     => esc_html__( 'Hover border color', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Background color on hover stats.', 'saasland' ),
+//             'id'        => 'menu_btn_hover_border_color_sticky',
+//             'type'      => 'color',
+//             'output'    => array(
+//                 'border-color' => '.header_area.navbar_fixed .navbar .btn_get.btn-meta:hover',
+//             ),
+//         ),
+
+//         array(
+//             'id'     => 'button_colors-sticky-end',
+//             'type'   => 'section',
+//             'indent' => false,
+//         ),
+
+//         array(
+//             'title'     => esc_html__( 'Button padding', 'saasland' ),
+//             'subtitle'  => esc_html__( 'Padding around the menu action button.', 'saasland' ),
+//             'id'        => 'menu_btn_padding',
+//             'type'      => 'spacing',
+//             'output'    => array( '.btn_get' ),
+//             'mode'      => 'padding',
+//             'units'     => array( 'em', 'px', '%' ),      // You can specify a unit value. Possible: px, em, %
+//             'units_extended' => 'true',
+//             'required'  => array( 'is_menu_btn', '=', '1' )
+//         ),
+//     )
+// ));
+
 
 /**
  * Menu Settings
@@ -92,3 +303,4 @@ Redux::set_section( 'singleland_opt', array(
 
     )
 ));
+
