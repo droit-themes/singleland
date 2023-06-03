@@ -39,7 +39,7 @@ function singleland_resister_required_plugin() {
         array(
             'name'               => esc_html__( 'Singleland Core', 'singleland' ), // The plugin name.
             'slug'               => 'singleland-core', // The plugin slug (typically the folder name).
-            'source'             => 'https://singleland.droitlab.com/downloadfile/singleland-core_1.0.1.zip', // The plugin source.
+            'source'             => 'https://dlsingleland.droitlab.com/downloadfile/singleland-core_1.0.1.zip', // The plugin source.
             'required'           => true, // If false, the plugin is only 'recommended' instead of required.
             'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
             'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
