@@ -1,3 +1,10 @@
+----- 1.0.2 (03 June 2023) -----
+Added: Droit Dark Integration 
+updated : Singleland-core URL Updated
+Updated : One-click demo data updated
+updated : Deprecated function updated
+updated : compatibility with latest wordpress
+
 ----- 1.0.1 (13  April 2023) -----
 Added: 05 New Home Page Added
 Added: All page Dark demo added
