@@ -31,15 +31,14 @@
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'singleland' ); ?></a>
         <?php
         //Header Style
-
         do_action('singleland_header_content', get_singleland_builder_id(get_the_ID()));
         /**
          * add header
              * hook _singleland_header -- 10;
          */
-        /*
+
         global $post;
-        $header_id = get_themebuilder_Id(get_the_ID(), 'header');
-        do_action('singleland_banner_content', $header_id);
-        */
+        // $header_id = get_themebuilder_Id(get_the_ID(), 'header');
+        // do_action('singleland_banner_content', $header_id);
+
         ?>

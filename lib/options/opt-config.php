@@ -38,10 +38,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     Redux::set_args( $opt_name, $args );
     require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_header.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_banner.php';
-    require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_footer.php';
 	// require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_colors.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_blog.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_page.php';
     if(class_exists('WooCommerce')) {
         require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_woocomemrce.php';
     }
+    require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_footer.php';
+    require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_custom_posts.php';

@@ -25,6 +25,51 @@ Redux::set_section('singleland_opt', array(
                 'teeny'         => false,
             )
         ),
+
+        array(
+            'title'     => esc_html__( 'Background Color', 'singleland' ),
+            'id'        => 'footer_bg_color',
+            'type'      => 'color',
+            'mode'      => 'background',
+            'output'    => array( '.site-footer' ),
+        ),
+        array(
+            'title'     => esc_html__( 'Footer Background', 'singleland' ),
+            'id'        => 'singleland_footer_background',
+            'type'      => 'media',
+        ),
+        array(
+            'id'          => 'footer_typo',
+            'type'        => 'typography',
+            'title'       => __('Typography', 'singleland'),
+            'google'      => true,
+            'font-backup' => true,
+            'color'       => false,
+            'output'      => array('.site-footer .site-info'),
+            'units'       => 'px',
+        ),
+        array(
+            'title'     => esc_html__( 'Font color', 'singleland' ),
+            'id'        => 'footer_font_color',
+            'type'      => 'color',
+            'output'    => array( '.site-footer .site-info' ),
+        ),
+        array(
+            'title'     => esc_html__( 'Font Link color', 'singleland' ),
+            'id'        => 'footer_link_font_color',
+            'type'      => 'color',
+            'output'    => array( '.site-footer .site-info a' ),
+        ),
+        array(
+            'title'     => esc_html__( 'Footer padding', 'singleland' ),
+            'subtitle'  => esc_html__( 'Padding around the menu action button.', 'singleland' ),
+            'id'        => 'footer_padding',
+            'type'      => 'spacing',
+            'output'    => array( '.site-footer' ),
+            'mode'      => 'padding',
+            'units'     => array( 'em', 'px', '%' ),      // You can specify a unit value. Possible: px, em, %
+            'units_extended' => 'true',
+        ),
 	)
 ));
 
