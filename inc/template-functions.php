@@ -283,32 +283,31 @@ if ( !function_exists('singleland_header_footer_builder_id')){
 
 function get_themebuilder_Id( $id, $type = 'header' ) {
 
-	$content_id = '';
-	 $arg = [
-	   'post_type' => 'droit-templates',
-	   'post_status' => 'publish',
-	   'sort_order' => 'DESC',
-	   'sort_column' => 'ID,post_title',
-	   'numberposts' => -1,
-	];
-	$pages = get_posts( $arg );
-   
-	$dispaly_list = [];
-   
-	foreach($pages as $page) {
-	   $get_tempalte = get_post_meta($page->ID, 'dtdr_header_templates', true);
-	   
-	   //  Check display Header 	
-	   if( isset($get_tempalte['type']) && $get_tempalte['type'] == $type) {
-		   $dispaly = $get_tempalte['display'];
-		   $dispaly_list[$page->ID] = $dispaly;
-	   }	
-	}  
-	
-	return singleland_themebuilder_id($dispaly_list, $id);
-   
-   }
+ $content_id = '';
+  $arg = [
+	'post_type' => 'droit-templates',
+	'post_status' => 'publish',
+	'sort_order' => 'DESC',
+	'sort_column' => 'ID,post_title',
+	'numberposts' => -1,
+ ];
+ $pages = get_posts( $arg );
 
+ $dispaly_list = [];
+
+ foreach($pages as $page) {
+	$get_tempalte = get_post_meta($page->ID, 'dtdr_header_templates', true);
+	
+	//  Check display Header 	
+	if( isset($get_tempalte['type']) && $get_tempalte['type'] == $type) {
+		$dispaly = $get_tempalte['display'];
+		$dispaly_list[$page->ID] = $dispaly;
+	}	
+ }  
+ 
+ return singleland_themebuilder_id($dispaly_list, $id);
+
+}
 
 if ( !function_exists('singleland_header') ) {
 	function singleland_header( $header_id ) {
@@ -335,28 +334,15 @@ if ( !function_exists('singleland_header') ) {
 	add_action('singleland_header_content', 'singleland_header');
  }
 
-
 if(!function_exists('_singleland_footer')){
 	function _singleland_footer( $footer_id ) {
 	
 		if ( $footer_id != '' && class_exists( '\Elementor\Plugin' ) ) {
 			echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $footer_id );
 		} else {
-
-			$footer_url = singleland_opt('singleland_footer_background');
-			$footer_background_url = SINGLELAND_IMAGES.'/blog/banner/banner.png';
-
-			if($footer_url && !empty($footer_url['url'])) {
-				$footer_background_url = $footer_url['url'];
-			}
-
-			if(!class_exists('Redux')){
-			$footer_background_url = '';
-			}
-
 			$footer_text = singleland_opt('footer_copyright_txt', 'Copyright &copy; 2023 <a href="https://droitthemes.com/">DroitThemes</a> | All rights reserved');
 			?>
-			<footer id="colophon" class="site-footer text-center" data-bg-img="<?php echo esc_url($footer_background_url); ?>">
+			<footer id="colophon" class="site-footer text-center">
 				<div class="site-info container">
 					<?php echo singleland_kses($footer_text); ?>
 				</div><!-- .site-info -->
@@ -396,34 +382,7 @@ function get_singleland_builder_id( $id, $type = 'header' ) {
 
 }
 
-if ( !function_exists('singleland_header') ) {
-	function singleland_header( $header_id ) {
- 
-		 if ( $header_id != '' && class_exists( '\Elementor\Plugin' ) ) {
-			 if ( $header_id ) {
-				 echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $header_id );
-			 } else {
-				?>
-				<header id="masthead" class="site-header sticky_nav">
-					 <?php get_template_part( 'template-parts/header/nav/content',  'nav'); ?>
-				</header><!-- #masthead -->
-				<?php
-			 }
-		 } else {
-			 ?>
-			 <header id="masthead" class="site-header sticky_nav">
-				 <?php get_template_part( 'template-parts/header/nav/content',  'nav'); ?>
-			 </header><!-- #masthead -->
-			 <?php
-		 }
-	}
- 
-	add_action('singleland_header_content', 'singleland_header');
- }
-
-
-
- if ( !function_exists('singleland_banner_display') ) {
+if ( !function_exists('singleland_banner_display') ) {
 	function singleland_banner_display( $banner_id, $banner_type ) {
 		 if ( $banner_id != '' && class_exists( '\Elementor\Plugin' ) ) {
 			 if ( $banner_id ) {
@@ -439,16 +398,16 @@ if ( !function_exists('singleland_header') ) {
 	add_action('singleland_banner_content', 'singleland_banner_display', 10, 2);
  }
 
+
+
 function get_builder_id($arr, $key) {
 	foreach ($arr as $k => $val) {
-		if(in_array($key, $val)){
+		if(!in_array($key, $val)){
 			return $k;
 		}
 	}
 	return null;
  }
-
-
  
 if(!function_exists('singleland_themebuilder_id')){
 function singleland_themebuilder_id($arr = [], $id='') {
