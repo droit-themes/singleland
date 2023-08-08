@@ -38,6 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     Redux::set_args( $opt_name, $args );
     require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_header.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_banner.php';
+    require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_menu.php';
 	// require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_colors.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_blog.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_page.php';
