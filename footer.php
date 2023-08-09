@@ -15,6 +15,18 @@ $footer = get_themebuilder_Id(get_the_ID(), 'footer');
  * hook _singleland_footer -- 10;
  */
 do_action('_singleland_footer_content', $footer);
+
+$footer_url = singleland_opt('singleland_footer_background');
+// $is_defult_footer = muffle_options('is_defult_footer');
+$footer_background_url = SINGLELAND_IMAGES.'/blog/banner/banner.png';
+
+if($footer_url && !empty($footer_url['url'])) {
+    $footer_background_url = $footer_url['url'];
+}
+
+if(!class_exists('Redux')){
+  $footer_background_url = '';
+}
 ?>
 </div><!-- #page -->
 

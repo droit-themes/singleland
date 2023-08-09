@@ -342,7 +342,7 @@ if(!function_exists('_singleland_footer')){
 		} else {
 			$footer_text = singleland_opt('footer_copyright_txt', 'Copyright &copy; 2023 <a href="https://droitthemes.com/">DroitThemes</a> | All rights reserved');
 			?>
-			<footer id="colophon" class="site-footer text-center">
+			<footer id="colophon" class="site-footer text-center" data-bg-img="<?php echo esc_url($footer_background_url); ?>">
 				<div class="site-info container">
 					<?php echo singleland_kses($footer_text); ?>
 				</div><!-- .site-info -->

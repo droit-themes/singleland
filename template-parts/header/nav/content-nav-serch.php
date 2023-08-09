@@ -19,11 +19,11 @@ $singleland_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_a
         </form>
     </li>
 </ul>
+<?php 
+endif; 
+?>
 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
     <span></span><span></span><span></span><span></span><span></span><span></span>
 </button>
-
-<?php 
-endif;

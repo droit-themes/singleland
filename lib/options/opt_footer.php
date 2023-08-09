@@ -13,6 +13,17 @@ Redux::set_section('singleland_opt', array(
     'subsection'    => true,
 	'fields'        => array(
 
+        array(
+            'id'       => 'is_defult_footer',
+            'type'     => 'button_set',
+            'title'    => esc_html__('Use Defult footer', 'muffle'),
+            'options' => array(
+                'yes' => esc_html__('Yes', 'muffle'), 
+                'no' => esc_html__('No', 'muffle'), 
+             ), 
+            'default' => 'yes'
+        ),
+
 	    array(
             'title'     => esc_html__('Copyright Text', 'singleland'),
             'id'        => 'footer_copyright_txt',
@@ -23,7 +34,8 @@ Redux::set_section('singleland_opt', array(
                 'media_buttons' => false,
                 'textarea_rows' => 10,
                 'teeny'         => false,
-            )
+            ),
+            'required'  => array( 'is_defult_footer', '=', 'yes' )
         ),
 
         array(

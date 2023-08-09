@@ -56,7 +56,7 @@ Redux::set_section('singleland_opt', array(
             'type'      => 'media',
             'title'     => __('Upload Banner', 'singleland'),
             'default'   => array(
-                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.png',
+                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.jpg',
             ),
             'required'  => array('page_banner_toggle', '=', 'show')
 
@@ -95,6 +95,17 @@ Redux::set_section('singleland_opt', array(
                 'hide'  => esc_html__('Hide Banner', 'singleland'),
             ), 
             'default'   => 'show'
+        ),
+
+        array(
+            'id'       => 'singleland_blog_banner_breadcrumb',
+            'type'     => 'button_set',
+            'title'    => esc_html__('Show Blog Breadcrumb', 'muffle'),
+            'options' => array(
+                'show' => esc_html__('Show', 'muffle'), 
+                'hide' => esc_html__('Hide', 'muffle'), 
+            ), 
+            'default' => 'show'
         ),
 
         array(
@@ -188,7 +199,7 @@ Redux::set_section('singleland_opt', array(
             'type'      => 'media',
             'title'     => __('Upload Banner', 'singleland'),
             'default'   => array(
-                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.png',
+                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.jpg',
             ),
             'required'  => array('single_blog_banner_toggle', '=', 'show')
 
@@ -270,7 +281,7 @@ Redux::set_section('singleland_opt', array(
             'type'      => 'media',
             'title'     => __('Upload Banner', 'singleland'),
             'default'   => array(
-                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.png',
+                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.jpg',
             ),
             'required'  => array('archive_banner_toggle', '=', 'show')
 
@@ -304,7 +315,7 @@ Redux::set_section('singleland_opt', array(
             'type'      => 'media',
             'title'     => __('Upload Banner', 'singleland'),
             'default'   => array(
-                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.png',
+                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.jpg',
             ),
         ),
 
@@ -379,7 +390,7 @@ Redux::set_section('singleland_opt', array(
             'type'      => 'media',
             'title'     => __('Upload Banner', 'singleland'),
             'default'   => array(
-                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.png',
+                'url'   => SINGLELAND_IMAGES.'/blog/banner/blog_details_img.jpg',
             ),
             'required'  => array('error_banner_toggle', '=', 'show')
         ),
