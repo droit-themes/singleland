@@ -309,31 +309,6 @@ function get_themebuilder_Id( $id, $type = 'header' ) {
 
 }
 
-if ( !function_exists('singleland_header') ) {
-	function singleland_header( $header_id ) {
- 
-		 if ( $header_id != '' && class_exists( '\Elementor\Plugin' ) ) {
-			 if ( $header_id ) {
-				 echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $header_id );
-			 } else {
-				?>
-				<header id="masthead" class="site-header sticky_nav">
-					 <?php get_template_part( 'template-parts/header/nav/content',  'nav'); ?>
-				</header><!-- #masthead -->
-				<?php
-			 }
-		 } else {
-			 ?>
-			 <header id="masthead" class="site-header sticky_nav">
-				 <?php get_template_part( 'template-parts/header/nav/content',  'nav'); ?>
-			 </header><!-- #masthead -->
-			 <?php
-		 }
-	}
- 
-	add_action('singleland_header_content', 'singleland_header');
- }
-
 if(!function_exists('_singleland_footer')){
 	function _singleland_footer( $footer_id ) {
 	
@@ -354,33 +329,6 @@ if(!function_exists('_singleland_footer')){
 	add_action('_singleland_footer_content', '_singleland_footer');
 }
 
-function get_singleland_builder_id( $id, $type = 'header' ) {
-
-    $content_id = '';
-    $arg = [
-        'post_type' => 'droit-templates',
-        'post_status' => 'publish',
-        'sort_order' => 'DESC',
-        'sort_column' => 'ID,post_title',
-        'numberposts' => -1,
-    ];
-    $pages = get_posts( $arg );
-
-    $display_list = [];
-
-    foreach($pages as $page) {
-
-        $get_template = get_post_meta($page->ID, 'dtdr_header_templates', true);
-
-        //  Check display Header
-        if ($get_template['type'] == $type) {
-            $display = $get_template['display'];
-            $display_list[$page->ID] = $display;
-        }
-    }
-    return singleland_themebuilder_id($display_list, $id);
-
-}
 
 if ( !function_exists('singleland_banner_display') ) {
 	function singleland_banner_display( $banner_id, $banner_type ) {
@@ -463,8 +411,43 @@ if(get_builder_id($arr, 'entire_website')) {
  }
 }
 
-    add_filter( 'product-best-sellers', function($links) {
-        $links = str_replace('</a> (', '<span>', $links);
-        $links = str_replace(')', '</span> </a>', $links);
-        return $links;
-    });
+add_filter( 'product-best-sellers', function($links) {
+	$links = str_replace('</a> (', '<span>', $links);
+	$links = str_replace(')', '</span> </a>', $links);
+	return $links;
+});
+
+
+function header_footer_template_id($postype, $post_id) {
+
+    $template_id = '';
+    $header_arg = [
+        'post_type' => $postype,
+        'numberposts' => -1,
+        'post_status' => 'publish',
+        'order' => 'ASC'
+    ];
+
+    $headers = get_posts($header_arg);
+
+    foreach ($headers as $header) {
+
+        if ( !get_post_meta( $header->ID, 'active_header', true  ) ) {
+            continue;
+        }
+
+        if ( get_post_meta($header->ID, 'entry_site', true) ) {
+            $template_id = $header->ID;
+
+        } elseif (get_post_meta($header->ID, 'select_page_menu', true)) {
+
+            if(in_array($post_id, get_post_meta($header->ID, 'select_page_menu', true))){
+                $template_id = $header->ID;
+            }
+
+        } else {
+            $template_id = '';
+        }
+    }
+    return $template_id;
+}

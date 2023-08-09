@@ -31,14 +31,24 @@
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'singleland' ); ?></a>
         <?php
         //Header Style
-        do_action('singleland_header_content', get_singleland_builder_id(get_the_ID()));
-        /**
-         * add header
-             * hook _singleland_header -- 10;
-         */
+       
+       // do_action('singleland_header_content', get_singleland_builder_id(get_the_ID()));
+        // global $post;
+       
+        ?>
+
+        <?php
 
         global $post;
-        // $header_id = get_themebuilder_Id(get_the_ID(), 'header');
-        // do_action('singleland_banner_content', $header_id);
-
+            $header_id = '';
+            if (isset($post->ID) && function_exists('header_footer_template_id')) {
+                $header_id = header_footer_template_id('header', $post->ID);
+            }
+                if ( $header_id != '' && class_exists('\Elementor\Plugin' ) ) {
+                echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $header_id );
+            }else{
         ?>
+        <header id="masthead" class="site-header sticky_nav">
+            <?php  get_template_part( 'template-parts/header/nav/content',  'nav'); ?>        
+        </header><!-- #masthead -->
+        <?php } ?>
