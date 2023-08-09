@@ -1,28 +1,11 @@
 <?php
-Redux::set_section('singleland_opt', array(
-	'title'     => esc_html__( 'Footer', 'singleland' ),
-	'id'        => 'footer_settings_opt',
-	'icon'      => 'dashicons dashicons-arrow-down-alt2',
-));
 
 // page Title Bar
 Redux::set_section('singleland_opt', array(
-	'title'         => esc_html__( 'Contents', 'singleland' ),
+	'title'         => esc_html__( 'Footer', 'singleland' ),
 	'id'            => 'footer_contents_opt',
-	'icon'          => '',
-    'subsection'    => true,
+	'icon'          => 'dashicons dashicons-admin-post',
 	'fields'        => array(
-
-        array(
-            'id'       => 'is_defult_footer',
-            'type'     => 'button_set',
-            'title'    => esc_html__('Use Defult footer', 'muffle'),
-            'options' => array(
-                'yes' => esc_html__('Yes', 'muffle'), 
-                'no' => esc_html__('No', 'muffle'), 
-             ), 
-            'default' => 'yes'
-        ),
 
 	    array(
             'title'     => esc_html__('Copyright Text', 'singleland'),
