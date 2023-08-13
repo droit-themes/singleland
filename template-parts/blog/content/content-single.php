@@ -34,6 +34,33 @@ $show_social_share = singleland_opt('display_blog_share', 'no');
                 _pluginname_social_share();
             }
              ?>
+                <div class="share">
+                    <span><?php echo esc_html_e($show_social_title); ?></span>
+                    <ul class="social_icon list-unstyled">
+                    <?php
+                        if( '1' == $opt['is_social_share_links']['facebook'] ){
+                    ?>
+                      <li> <a href="https://facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i></a></li>
+                      
+                    <?php } ?>
+
+                    <?php
+                    if( '1' == $opt['is_social_share_links']['twitter'] ){ ?>
+                      <li> <a href="https://twitter.com/intent/tweet?text=<?php the_permalink(); ?>"><i class="fab fa-twitter"></i></a></li>
+                    <?php } ?>
+
+                    <?php 
+                    if( '1' == $opt['is_social_share_links']['pinterest'] ){ ?>
+                      <li> <a href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>"><i class="fab fa-pinterest-p"></i></a></li> 
+                    <?php } ?> 
+
+                    <?php 
+                    if( '1' == $opt['is_social_share_links']['linkedin'] ){ ?>
+                        <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>"><i class="fab fa-linkedin-in"></i></a></li>
+                    <?php } ?>
+
+                    </ul>
+                </div>
             </div>
            <?php }  ?>
        

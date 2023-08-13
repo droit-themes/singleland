@@ -188,8 +188,8 @@ function singleland_widgets_init() {
 
 	// Footer Widgets
     register_sidebar(array(
-        'name'          => esc_html__('Footer widgets', 'muffle'),
-        'description'   => esc_html__('Add widgets here for Footer widgets area', 'muffle'),
+        'name'          => esc_html__('Footer widgets', 'singleland'),
+        'description'   => esc_html__('Add widgets here for Footer widgets area', 'singleland'),
         'id'            => 'footer_widgets',
         'before_widget' => '<div id="%1$s" class="footer-widget col-lg-3 col-sm-6 wow fadeInDown %2$s" data-wow-delay=".3s">
                             <div class="single_footer_widget">',
@@ -237,4 +237,50 @@ add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_arg
 	return $args;
 }
 
-
+if(!function_exists('singleland_extention_wp_kses')) {
+ 
+    function singleland_extention_wp_kses ( $data ) {
+ 
+        $allow_html = array(
+            'a' => array(
+                'href' => array(),
+                'title' => array()
+            ),
+            'p' => array(
+                'cite' => array(),
+                'title' => array(),
+            ),
+            'br' => array(),
+            'em' => array(),
+            'strong' => array(),
+            'h1' => array(),
+            'h2' => array(),
+            'h3' => array(),
+            'h4' => array(),
+            'h5' => array(),
+            'h6' => array(),
+            'i' => array(),
+            'strong' => array(),
+            'code' => array(),
+            'li' => array(
+                'class' => array(),
+            ),
+            'ol' => array(
+                'class' => array(),
+            ),
+            'ul' => array(
+                'class' => array(),
+            ),
+            'img' => array(
+                'alt'    => array(),
+                'class'  => array(),
+                'height' => array(),
+                'src'    => array(),
+                'width'  => array(),
+            ),
+            'span'   => array()
+        );
+ 
+      return  wp_kses($data, $allow_html);
+    }
+}

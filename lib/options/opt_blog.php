@@ -44,8 +44,123 @@ Redux::set_section('singleland_opt', array(
             'type' => 'text',
             'default' => 'Read More'
         ),
-    )
-));
+
+        array(
+            'title'     => esc_html__( 'Post title length', 'muffle' ),
+            'subtitle'  => esc_html__( 'Blog post title length in character', 'muffle' ),
+            'id'        => 'post_title_length',
+            'type'      => 'slider',
+            'default'   => 1,
+            "min"       => 1,
+            "step"      => 1,
+            "max"       => 500,
+            'display_value' => 'text',
+        ),
+    
+        array(
+            'title'     => esc_html__( 'Post word excerpt', 'muffle' ),
+            'subtitle'  => esc_html__( 'If post excerpt is empty, the excerpt content will take from the post content. Define here how much word you want to show along with the each posts in the blog page.', 'muffle' ),
+            'id'        => 'blog_excerpt',
+            'type'      => 'slider',
+            'default'   => 40,
+            "min"       => 1,
+            "step"      => 1,
+            "max"       => 500,
+            'display_value' => 'text'
+        ),
+    
+        array(
+            'title'     => esc_html__( 'Post author', 'muffle' ),
+            'id'        => 'is_post_author',
+            'type'      => 'switch',
+            'on'        => esc_html__( 'Show', 'muffle' ),
+            'off'       => esc_html__( 'Hide', 'muffle' ),
+            'default'   => 'Show',
+        ),
+    
+        array(
+            'title'     => esc_html__( 'Post date', 'muffle' ),
+            'id'        => 'is_post_date',
+            'type'      => 'switch',
+            'on'        => esc_html__( 'Show', 'muffle' ),
+            'off'       => esc_html__( 'Hide', 'muffle' ),
+            'default'   => 'Show',
+        ),
+    
+        ///
+    
+        )
+    ));
+    
+    
+    
+    /*** Headers Typography ***/
+    Redux::set_section( 'singleland_opt', array(
+        'title'            => esc_html__( 'Blog Single', 'saasland' ),
+        'id'               => 'blog_single_opt',
+        'icon'             => '',
+        'subsection'       => true,
+        'fields'           => array(
+            array(
+                'id'       => 'muffle_display_blog_single_tags',
+                'type'     => 'button_set',
+                'title'    => esc_html__('Display Post Tags', 'muffle'),
+                'options' => array(
+                    'yes' => 'Yes', 
+                    'no' => 'No', 
+                 ), 
+                'default' => 'no'
+            ),
+            
+            array(
+                'id'       => 'muffle_display_blog_share',
+                'type'     => 'button_set',
+                'title'    => esc_html__('Display Social Share?', 'muffle'),
+                'options' => array(
+                    'yes' => 'Yes', 
+                    'no' => 'No', 
+                 ), 
+                'default' => 'no'
+            ),
+    
+            array( 
+                'id' => 'muffle_social_title_text',
+                'title'    => __('Shared Title', 'muffle'), 
+                'type' => 'text',
+                'default' => 'Shared'
+            ),
+    
+            array(
+                'id'       => 'is_social_share_links',
+                'type'     => 'checkbox',
+                'title'    => __('Checked Share Links', 'muffle'),
+                'options'  => array(
+                    'facebook' => __('Facebook', 'muffle'),
+                    'twitter'  => __('Twitter', 'muffle'),
+                    'pinterest'=> __('Pinterest', 'muffle'),
+                    'linkedin' => __('Linkedin', 'muffle')
+                ),
+                'default' => array(
+                    'facebook'  => '1', 
+                    'twitter'   => '1', 
+                    'pinterest' => '0',
+                    'linkedin' => '1'
+                ),
+            ),
+    
+            array(
+                'id'       => 'muffle_display_blog_comments',
+                'type'     => 'button_set',
+                'title'    => esc_html__('Display Comments Section', 'muffle'),
+                'options' => array(
+                    'yes' => 'Yes', 
+                    'no' => 'No', 
+                 ), 
+                'default' => 'yes'
+            ),
+    
+        )
+    ));    
 
 
 /**

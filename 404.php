@@ -8,38 +8,30 @@
  */
 
 get_header();
-
-$blog_sidebar = singleland_opt('blog_layout');
-
+$opt = get_option('singleland_opt');
+$error_heading  =!empty($opt['error_heading']) ?  $opt['error_heading'] : esc_html__('404', 'singleland');
+$error_title = !empty($opt['error_title']) ? $opt['error_title'] : esc_html__('Page not found', 'singleland');
+$error_subtitle = !empty($opt['error_subtitle']) ? $opt['error_subtitle'] : esc_html__("We can't seem to find the page you're looking for", "singleland");
+$error_home_btn_label  =!empty($opt['error_home_btn_label']) ?  $opt['error_home_btn_label'] : esc_html__('Go Back to home Page', 'singleland');
 ?>
-
-	<main id="primary" class="site-main">
-	     <?php
-		 /**
-		 * if active core plugin banner will pull from core plugin
-		 * else default load form theme 
-		 * @package _singleland Banner
-		 * @since 1.0.0
-		 * hook --_singleland_banner -- 10
-		 */
-		 $banner_id = get_themebuilder_Id(get_the_ID(), 'banner');		 
-		 do_action('singleland_banner_content', $banner_id, '404');
-		 singleland_wrapper_start( $blog_sidebar );		
-	 	?>
-		
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'singleland' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'singleland' ); ?></p>
-
-					<?php get_search_form(); ?>
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-         <?php singleland_wrapper_end($blog_sidebar); ?>
-	</main><!-- #main -->
+<section class="error_section section_padding event_details">
+    <div class="container custom_container">
+        <div class="row error_contain text-center">
+	        <div class="col-sm-12 col-sm-12">
+		        <div class="event_section_content">
+		            <div class="b_text">
+		                <h1 class="f_p w_color f_700"><?php echo singleland_extention_wp_kses( $error_heading ); ?></h1>
+		            </div>
+		            <h2 class="f_p f_400 w_color f_size_40"><?php echo singleland_extention_wp_kses( $error_title );  ?></h2>
+		            <p class="w_color f_400"><?php echo singleland_extention_wp_kses( $error_subtitle );  ?></p>
+		            <a href="<?php echo esc_url(home_url('/')) ?>" class="error_btn btn_hover mt_40">
+		                <?php echo singleland_extention_wp_kses( $error_home_btn_label );  ?>
+		            </a>
+		        </div>
+	    	</div>
+        </div> 
+    </div>
+</section>
 
 <?php
-get_footer();
+// get_footer();

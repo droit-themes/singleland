@@ -7,14 +7,20 @@
  * @package singleland
  */
 
+
 if ( ! function_exists( 'singleland_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
 	function singleland_posted_on() {
+		$opt = get_option( 'singleland_opt' );
+		$is_post_date = isset($opt['is_post_date']) ? $opt['is_post_date'] : '1';
+
+		if ( $is_post_date == '1' ) :
 	?>
 	  <span class="post_date_loop"><i class="fas fa-calendar-alt"></i><?php echo esc_html( get_the_date(get_option('date_format')) ); ?> </span> 
 	<?php
+	endif;
 	}
 endif;
 
@@ -23,6 +29,7 @@ if ( ! function_exists( 'singleland_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function singleland_posted_by() {
+		
 		global $post;
 		$byline = sprintf(
 			/* translators: %s: post author. */
@@ -31,7 +38,6 @@ if ( ! function_exists( 'singleland_posted_by' ) ) :
 		);
 
 		echo '<span class="byline"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
 	}
 endif;
 

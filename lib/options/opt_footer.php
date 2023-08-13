@@ -7,6 +7,17 @@ Redux::set_section('singleland_opt', array(
 	'icon'          => 'dashicons dashicons-admin-post',
 	'fields'        => array(
 
+        array(
+            'id'       => 'is_defult_footer',
+            'type'     => 'button_set',
+            'title'    => esc_html__('Use Defult footer', 'singleland'),
+            'options' => array(
+                'yes' => esc_html__('Yes', 'singleland'), 
+                'no' => esc_html__('No', 'singleland'), 
+             ), 
+            'default' => 'yes'
+        ),
+
 	    array(
             'title'     => esc_html__('Copyright Text', 'singleland'),
             'id'        => 'footer_copyright_txt',

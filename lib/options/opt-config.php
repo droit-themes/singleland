@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         'display_version'      => $theme->get( 'Version' ),
         'menu_title'           => esc_html__( 'Theme Settings', 'singleland' ),
         'customizer'           => true,
-		'dev_mode'             => true,
+		'dev_mode'             => false,
 		'forced_dev_mode_off'  => true,
         'admin_bar_priority'   => 50,
         'page_priority'        => 58,
@@ -39,9 +39,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_header.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_banner.php';
     require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_menu.php';
-	// require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_colors.php';
+	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_colors.php';
+    require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_typo.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_blog.php';
 	require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_page.php';
+    require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_404.php';
     if(class_exists('WooCommerce')) {
         require SINGLELAND_THEMEROOT_DIR . '/lib/options/opt_woocomemrce.php';
     }
