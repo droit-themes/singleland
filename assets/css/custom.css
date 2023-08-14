@@ -2757,3 +2757,27 @@ html.drdt-dark-mode .blog_grid_masonory.style_5 .dl_post_meta p:after {
     font-size: 38px;
   }
 }
+
+.post_bottom .share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post_bottom .share ul.social_icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.post_bottom .share ul.social_icon li {
+  margin: 0;
+}
+
+.blog_breadcrumbs_area_two:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

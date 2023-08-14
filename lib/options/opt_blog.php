@@ -46,8 +46,8 @@ Redux::set_section('singleland_opt', array(
         ),
 
         array(
-            'title'     => esc_html__( 'Post title length', 'muffle' ),
-            'subtitle'  => esc_html__( 'Blog post title length in character', 'muffle' ),
+            'title'     => esc_html__( 'Post title length', 'singleland' ),
+            'subtitle'  => esc_html__( 'Blog post title length in character', 'singleland' ),
             'id'        => 'post_title_length',
             'type'      => 'slider',
             'default'   => 1,
@@ -58,8 +58,8 @@ Redux::set_section('singleland_opt', array(
         ),
     
         array(
-            'title'     => esc_html__( 'Post word excerpt', 'muffle' ),
-            'subtitle'  => esc_html__( 'If post excerpt is empty, the excerpt content will take from the post content. Define here how much word you want to show along with the each posts in the blog page.', 'muffle' ),
+            'title'     => esc_html__( 'Post word excerpt', 'singleland' ),
+            'subtitle'  => esc_html__( 'If post excerpt is empty, the excerpt content will take from the post content. Define here how much word you want to show along with the each posts in the blog page.', 'singleland' ),
             'id'        => 'blog_excerpt',
             'type'      => 'slider',
             'default'   => 40,
@@ -70,20 +70,20 @@ Redux::set_section('singleland_opt', array(
         ),
     
         array(
-            'title'     => esc_html__( 'Post author', 'muffle' ),
+            'title'     => esc_html__( 'Post author', 'singleland' ),
             'id'        => 'is_post_author',
             'type'      => 'switch',
-            'on'        => esc_html__( 'Show', 'muffle' ),
-            'off'       => esc_html__( 'Hide', 'muffle' ),
+            'on'        => esc_html__( 'Show', 'singleland' ),
+            'off'       => esc_html__( 'Hide', 'singleland' ),
             'default'   => 'Show',
         ),
     
         array(
-            'title'     => esc_html__( 'Post date', 'muffle' ),
+            'title'     => esc_html__( 'Post date', 'singleland' ),
             'id'        => 'is_post_date',
             'type'      => 'switch',
-            'on'        => esc_html__( 'Show', 'muffle' ),
-            'off'       => esc_html__( 'Hide', 'muffle' ),
+            'on'        => esc_html__( 'Show', 'singleland' ),
+            'off'       => esc_html__( 'Hide', 'singleland' ),
             'default'   => 'Show',
         ),
     
@@ -102,9 +102,9 @@ Redux::set_section('singleland_opt', array(
         'subsection'       => true,
         'fields'           => array(
             array(
-                'id'       => 'muffle_display_blog_single_tags',
+                'id'       => 'singleland_display_blog_single_tags',
                 'type'     => 'button_set',
-                'title'    => esc_html__('Display Post Tags', 'muffle'),
+                'title'    => esc_html__('Display Post Tags', 'singleland'),
                 'options' => array(
                     'yes' => 'Yes', 
                     'no' => 'No', 
@@ -113,9 +113,9 @@ Redux::set_section('singleland_opt', array(
             ),
             
             array(
-                'id'       => 'muffle_display_blog_share',
+                'id'       => 'singleland_display_blog_share',
                 'type'     => 'button_set',
-                'title'    => esc_html__('Display Social Share?', 'muffle'),
+                'title'    => esc_html__('Display Social Share?', 'singleland'),
                 'options' => array(
                     'yes' => 'Yes', 
                     'no' => 'No', 
@@ -124,8 +124,8 @@ Redux::set_section('singleland_opt', array(
             ),
     
             array( 
-                'id' => 'muffle_social_title_text',
-                'title'    => __('Shared Title', 'muffle'), 
+                'id' => 'singleland_social_title_text',
+                'title'    => __('Shared Title', 'singleland'), 
                 'type' => 'text',
                 'default' => 'Shared'
             ),
@@ -133,12 +133,12 @@ Redux::set_section('singleland_opt', array(
             array(
                 'id'       => 'is_social_share_links',
                 'type'     => 'checkbox',
-                'title'    => __('Checked Share Links', 'muffle'),
+                'title'    => __('Checked Share Links', 'singleland'),
                 'options'  => array(
-                    'facebook' => __('Facebook', 'muffle'),
-                    'twitter'  => __('Twitter', 'muffle'),
-                    'pinterest'=> __('Pinterest', 'muffle'),
-                    'linkedin' => __('Linkedin', 'muffle')
+                    'facebook' => __('Facebook', 'singleland'),
+                    'twitter'  => __('Twitter', 'singleland'),
+                    'pinterest'=> __('Pinterest', 'singleland'),
+                    'linkedin' => __('Linkedin', 'singleland')
                 ),
                 'default' => array(
                     'facebook'  => '1', 
@@ -149,9 +149,9 @@ Redux::set_section('singleland_opt', array(
             ),
     
             array(
-                'id'       => 'muffle_display_blog_comments',
+                'id'       => 'singleland_display_blog_comments',
                 'type'     => 'button_set',
-                'title'    => esc_html__('Display Comments Section', 'muffle'),
+                'title'    => esc_html__('Display Comments Section', 'singleland'),
                 'options' => array(
                     'yes' => 'Yes', 
                     'no' => 'No', 
@@ -166,23 +166,23 @@ Redux::set_section('singleland_opt', array(
 /**
  * Blog Single Post
  */
-Redux::set_section('singleland_opt', array(
-	'title'         => esc_html__( 'Single Post', 'singleland' ),
-	'id'            => 'blog_single_post_settings_opt',
-	'icon'          => '',
-    'subsection'    => true,
-	'fields'        => array(
+// Redux::set_section('singleland_opt', array(
+// 	'title'         => esc_html__( 'Single Post', 'singleland' ),
+// 	'id'            => 'blog_single_post_settings_opt',
+// 	'icon'          => '',
+//     'subsection'    => true,
+// 	'fields'        => array(
 
-        array(
-            'id'        => 'display_blog_share',
-            'type'      => 'button_set',
-            'title'     => esc_html__('Display Social Share?', 'singleland'),
-            'options'   => array(
-                'yes'   => 'Yes',
-                'no'    => 'No',
-            ),
-            'default'   => 'no'
-        ),
-	)
-));
+//         array(
+//             'id'        => 'display_blog_share',
+//             'type'      => 'button_set',
+//             'title'     => esc_html__('Display Social Share?', 'singleland'),
+//             'options'   => array(
+//                 'yes'   => 'Yes',
+//                 'no'    => 'No',
+//             ),
+//             'default'   => 'no'
+//         ),
+// 	)
+// ));
 

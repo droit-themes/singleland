@@ -64,56 +64,56 @@ Redux::set_section( 'singleland_opt', array(
 /**
  * Slug Re-write
  */
-Redux::set_section( 'singleland_opt', array(
-    'title'     => esc_html__( 'Post Type Slugs', 'singleland' ),
-    'id'        => 'singleland_cp_slugs',
-    'icon'      => '',
-    'subsection'=> true,
-    'fields'    => array(
-        array(
-            'id'        => 'cp_slug_note',
-            'type'      => 'info',
-            'style'     => 'warning',
-            'title'     => esc_html__( 'Slug Re-write:', 'singleland' ),
-            'icon'      => 'dashicons dashicons-info',
-            'desc'      => sprintf (
-                '%1$s <a href="%2$s"> %3$s</a> %4$s',
-                esc_html__( "These are the custom post's slugs offered by singleland. You can customize the permalink structure (site_domain/post_type_slug/post_slug) by changing the post type slug (post_type_slug) from here. Don't forget to save the permalinks settings from", 'singleland' ),
-                get_admin_url( null, 'options-permalink.php' ),
-                esc_html__( 'Settings > Permalinks', 'singleland' ),
-                esc_html__( 'after changing the slug value.', 'singleland' )
-            )
-        ),
+// Redux::set_section( 'singleland_opt', array(
+//     'title'     => esc_html__( 'Post Type Slugs', 'singleland' ),
+//     'id'        => 'singleland_cp_slugs',
+//     'icon'      => '',
+//     'subsection'=> true,
+//     'fields'    => array(
+//         array(
+//             'id'        => 'cp_slug_note',
+//             'type'      => 'info',
+//             'style'     => 'warning',
+//             'title'     => esc_html__( 'Slug Re-write:', 'singleland' ),
+//             'icon'      => 'dashicons dashicons-info',
+//             'desc'      => sprintf (
+//                 '%1$s <a href="%2$s"> %3$s</a> %4$s',
+//                 esc_html__( "These are the custom post's slugs offered by singleland. You can customize the permalink structure (site_domain/post_type_slug/post_slug) by changing the post type slug (post_type_slug) from here. Don't forget to save the permalinks settings from", 'singleland' ),
+//                 get_admin_url( null, 'options-permalink.php' ),
+//                 esc_html__( 'Settings > Permalinks', 'singleland' ),
+//                 esc_html__( 'after changing the slug value.', 'singleland' )
+//             )
+//         ),
         
-        array(
-            'title'     => esc_html__( 'Service Slug', 'singleland' ),
-            'id'        => 'service_slug',
-            'type'      => 'text',
-            'required'  => array( 'is_service_cpt', '=', '1' ),
-            'default'   => 'service'
-        ),
+//         array(
+//             'title'     => esc_html__( 'Service Slug', 'singleland' ),
+//             'id'        => 'service_slug',
+//             'type'      => 'text',
+//             'required'  => array( 'is_service_cpt', '=', '1' ),
+//             'default'   => 'service'
+//         ),
         
-        array(
-            'title'     => esc_html__( 'Portfolio Slug', 'singleland' ),
-            'id'        => 'portfolio_slug',
-            'type'      => 'text',
-            'required'  => array( 'is_portfolio_cpt', '=', '1' ),
-            'default'   => 'portfolio'
-        ),
+//         array(
+//             'title'     => esc_html__( 'Portfolio Slug', 'singleland' ),
+//             'id'        => 'portfolio_slug',
+//             'type'      => 'text',
+//             'required'  => array( 'is_portfolio_cpt', '=', '1' ),
+//             'default'   => 'portfolio'
+//         ),
         
-        array(
-            'title'     => esc_html__( 'Team Slug', 'singleland' ),
-            'id'        => 'team_slug',
-            'type'      => 'text',
-            'required'  => array( 'is_team_cpt', '=', '1' ),
-            'default'   => 'team'
-        ),
-        array(
-            'title'     => esc_html__( 'FAQs Slug', 'singleland' ),
-            'id'        => 'faqs_slug',
-            'type'      => 'text',
-            'required'  => array( 'is_faqs_cpt', '=', '1' ),
-            'default'   => 'faqs'
-        ),
-    )
-));
+//         array(
+//             'title'     => esc_html__( 'Team Slug', 'singleland' ),
+//             'id'        => 'team_slug',
+//             'type'      => 'text',
+//             'required'  => array( 'is_team_cpt', '=', '1' ),
+//             'default'   => 'team'
+//         ),
+//         array(
+//             'title'     => esc_html__( 'FAQs Slug', 'singleland' ),
+//             'id'        => 'faqs_slug',
+//             'type'      => 'text',
+//             'required'  => array( 'is_faqs_cpt', '=', '1' ),
+//             'default'   => 'faqs'
+//         ),
+//     )
+// ));

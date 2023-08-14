@@ -2,7 +2,10 @@
 /**
  * template to display single page content 
  */
-$show_social_share = singleland_opt('display_blog_share', 'no');
+$opt = get_option( 'singleland_opt' );
+$show_tags = singleland_opt('singleland_display_blog_single_tags', 'no');
+$show_social_share = singleland_opt('singleland_display_blog_share', 'no');
+$show_social_title = singleland_opt('singleland_social_title_text', 'Shared');
 
 ?>
 <div class="blog_single_info">
@@ -26,14 +29,11 @@ $show_social_share = singleland_opt('display_blog_share', 'no');
         
         ?>
        
-          <?php   if($show_social_share  == 'yes' && function_exists('_pluginname_social_share') || has_tag()){ ?>
             <div class="post_bottom">
-             <?php 
-              singleland_single_page_tag();
-              if($show_social_share  == 'yes' && function_exists('_pluginname_social_share')){
-                _pluginname_social_share();
-            }
+            <?php 
+             if($show_tags == 'yes'): singleland_single_page_tag(); endif;
              ?>
+             <?php if($show_social_share =='yes'): ?>
                 <div class="share">
                     <span><?php echo esc_html_e($show_social_title); ?></span>
                     <ul class="social_icon list-unstyled">
@@ -61,8 +61,8 @@ $show_social_share = singleland_opt('display_blog_share', 'no');
 
                     </ul>
                 </div>
+                <?php endif; ?>
             </div>
-           <?php }  ?>
        
     </div>
 </div>

@@ -18,8 +18,12 @@
 if ( post_password_required() ) {
 	return;
 }
-?>
 
+$opt = get_option( 'singleland_opt' );
+$show_comments = singleland_opt('singleland_display_blog_comments', 'yes');
+
+?>
+<?php if($show_comments == 'yes'): ?>
 <div id="comments" class="comments-area blog_comment_inner">
 
 	<?php
@@ -88,3 +92,4 @@ if ( post_password_required() ) {
 	?>
 
 </div><!-- #comments -->
+<?php endif ?>

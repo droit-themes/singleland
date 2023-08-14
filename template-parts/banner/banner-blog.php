@@ -21,7 +21,7 @@ if (!class_exists('Redux')) {
 
 
 if ( $banner_background_url != '' ) {  ?>
-    <div class="blog_breadcrumbs_area_two parallaxie" data-bg-img="<?php echo esc_url($banner_background_url); ?>">
+    <div class="blog blog_breadcrumbs_area_two parallaxie" data-bg-img="<?php echo esc_url($banner_background_url); ?>">
     <div class="overlay_bg"></div>
         <?php
 } else { ?>
