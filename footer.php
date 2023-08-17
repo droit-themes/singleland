@@ -11,6 +11,7 @@
 $footer_url = singleland_opt('singleland_footer_background');
 $is_defult_footer = singleland_opt('is_defult_footer');
 $footer_background_url = SINGLELAND_IMAGES.'/blog/banner/banner.png';
+global $post;
 
 if($footer_url && !empty($footer_url['url'])) {
     $footer_background_url = $footer_url['url'];
@@ -25,7 +26,8 @@ $footer_id = '';
 if ( isset( $post->ID) && function_exists('header_footer_template_id')) {
       $footer_id = header_footer_template_id('footer', $post->ID);
   }
-  
+
+
   if ( $footer_id != '' && class_exists( '\Elementor\Plugin' ) ) {
       echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $footer_id );
   }else{ ?>

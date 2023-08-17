@@ -30,16 +30,7 @@
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'singleland' ); ?></a>
         <?php
-        //Header Style
-       
-       // do_action('singleland_header_content', get_singleland_builder_id(get_the_ID()));
-        // global $post;
-       
-        ?>
-
-        <?php
-
-        global $post;
+            global $post;
             $header_id = '';
             if (isset($post->ID) && function_exists('header_footer_template_id')) {
                 $header_id = header_footer_template_id('header', $post->ID);
