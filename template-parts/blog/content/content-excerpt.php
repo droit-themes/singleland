@@ -9,8 +9,11 @@
  * @since singleland 1.0
  */
 
- $opt = get_option( 'singleland_opt' );
+$opt = get_option( 'singleland_opt' );
 $post_title_length = isset($opt['post_title_length']) ? $opt['post_title_length'] : '';
+$post_author = isset($opt['is_post_author']) ? $opt['is_post_author'] : '';
+
+
 
 ?>
 
@@ -28,7 +31,7 @@ $post_title_length = isset($opt['post_title_length']) ? $opt['post_title_length'
         ?>
         <div class="post-title entry-title">
             <div class="post-meta">
-            <?php 
+            <?php
             singleland_posted_on();
             singleland_posted_by();
             ?>
@@ -40,7 +43,7 @@ $post_title_length = isset($opt['post_title_length']) ? $opt['post_title_length'
 
 
 		<?php get_template_part( 'template-parts/blog/excerpt/excerpt', get_post_format() ); ?>
-        <div class="post-footer">
+            <div class="post-footer">
         <?php singleland_entry_meta_footer(); ?>  
         </div>
     </div><!-- .entry-content -->

@@ -127,10 +127,10 @@ Redux::set_section('singleland_opt', array(
         array(
             'id'       => 'singleland_blog_banner_breadcrumb',
             'type'     => 'button_set',
-            'title'    => esc_html__('Show Blog Breadcrumb', 'muffle'),
+            'title'    => esc_html__('Show Blog Breadcrumb', 'singleland'),
             'options' => array(
-                'show' => esc_html__('Show', 'muffle'), 
-                'hide' => esc_html__('Hide', 'muffle'), 
+                'show' => esc_html__('Show', 'singleland'), 
+                'hide' => esc_html__('Hide', 'singleland'), 
             ), 
             'default' => 'show'
         ),
