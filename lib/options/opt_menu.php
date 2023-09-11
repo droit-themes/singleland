@@ -6,6 +6,29 @@ Redux::setSection('singleland_opt', array(
     'id'               => 'menu_opt',
     'icon'             => 'el el-lines',
     'fields'           => array(
+
+        array(
+            'id'       => 'singleland_menu_layout',
+            'type'     => 'image_select',
+            'title'    => __('Menu Layout', 'muffle'), 
+            'subtitle' => __('Select your menu layout', 'muffle'),
+            'options'  => array(
+                'start'      => array(
+                    'alt'   => 'Start', 
+                    'img'   => ReduxFramework::$_url.'assets/img/2cr.png'
+                ),
+                'center'      => array(
+                    'alt'   => 'Center', 
+                    'img'   => ReduxFramework::$_url.'assets/img/3cm.png'
+                ),
+                'end'      => array(
+                    'alt'   => 'End', 
+                    'img'   => ReduxFramework::$_url.'assets/img/2cr.png'
+                ),
+            ),
+            'default' => 'center'
+        ),
+
         array(
             'title'     => esc_html__('Menu Bar Backgound Color', 'singleland'),
             'subtitle'  => esc_html__('Menu item font color', 'singleland'),
@@ -15,6 +38,29 @@ Redux::setSection('singleland_opt', array(
             ),
             'type'      => 'color',
         ),
+
+        array(
+            'id'          => 'menu_typo',
+            'type'        => 'typography',
+            'title'       => __('Typography', 'muffle'),
+            'google'      => true,
+            'font-backup' => true,
+            'color'       => false,
+            'output'      => array('.menu > .nav-item > .nav-link'),
+            'units'       => 'px',
+        ),
+
+        array(
+            'id'          => 'menu_submenu_typo',
+            'type'        => 'typography',
+            'title'       => __('Submenu Typography', 'muffle'),
+            'google'      => true,
+            'font-backup' => true,
+            'color'       => false,
+            'output'      => array('.menu > .nav-item.submenu .dropdown-menu .nav-item'),
+            'units'       => 'px',
+        ),
+        
         array(
             'title'     => esc_html__('Menu Item Color', 'singleland'),
             'subtitle'  => esc_html__('Menu item font color', 'singleland'),
@@ -166,6 +212,12 @@ Redux::set_section( 'singleland_opt', array(
         array (
             'title'     => esc_html__( 'Hamburger Menu Icon Color', 'singleland' ),
             'id'        => 'hamburger_menu_icon_color',
+            'type'      => 'color',
+        ),
+
+        array (
+            'title'     => esc_html__( 'Hamburger Menu Icon Color Sticky', 'muffle' ),
+            'id'        => 'hamburger_menu_icon_color_sticky',
             'type'      => 'color',
         ),
     )

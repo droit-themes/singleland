@@ -34,5 +34,76 @@ function singleland_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+
+	wp_deregister_style('extendify-utilities');
+
+
+    $dynamic_css = '';
+   
+    
+    $opt = get_option('singleland_opt');
+
+    if ( !empty($opt['mobile_menu_dropdown_bg']) ) {
+        $dynamic_css .= "
+            @media (max-width: 991px) {
+                .menu > .nav-item > .nav-link{
+                    background: {$opt['mobile_menu_dropdown_bg']} !important;
+                }
+            }";
+    }
+
+    if ( !empty($opt['mobile_menu_font_color']) ) {
+        $dynamic_css .= "
+            @media (max-width: 991px) {
+                .menu > .nav-item .nav-link, .menu > .nav-item.mega_menu{
+                    color: {$opt['mobile_menu_font_color']} !important;
+                }
+            }";
+    }
+
+    if ( !empty($opt['mobile_menu_hover_color']) ) {
+        $dynamic_css .= "
+            @media (max-width: 991px) {
+                .menu > .nav-item.active .nav-link{
+                    color: {$opt['mobile_menu_hover_color']} !important;
+                }
+                .menu > .nav-item.hover .nav-link{
+                    color: {$opt['mobile_menu_hover_color']} !important;
+                }
+            }";
+    }
+
+
+    if ( !empty($opt['mobile_menu_dropdown_color']) ) {
+        $dynamic_css .= "
+            @media (max-width: 991px) {
+                .menu > .nav-item .mobile_dropdown_icon{
+                    color: {$opt['mobile_menu_dropdown_color']} !important;
+                }
+            }";
+    }
+
+    if ( !empty($opt['hamburger_menu_icon_color']) ) {
+        $dynamic_css .= "
+            @media (max-width: 991px) {
+                .navbar-toggler span{
+                    background: {$opt['hamburger_menu_icon_color']} !important;
+                }
+            }";
+    }
+
+    if ( !empty($opt['hamburger_menu_icon_color_sticky']) ) {
+        $dynamic_css .= "
+            @media (max-width: 991px) {
+                .navbar_fixed .navbar-toggler span{
+                    background: {$opt['hamburger_menu_icon_color_sticky']} !important;
+                }
+            }";
+    }
+
+
+    wp_add_inline_style( 'singleland-root', $dynamic_css );
+
 }
 add_action( 'wp_enqueue_scripts', 'singleland_scripts' );
