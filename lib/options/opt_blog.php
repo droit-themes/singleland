@@ -38,14 +38,14 @@ Redux::set_section('singleland_opt', array(
             'default' => 'right'
         ),
 
-        array(
-            'title'     => esc_html__( 'Blog Format', 'muffle' ),
-            'id'        => 'defult_blog_format',
-            'type'      => 'switch',
-            'on'        => esc_html__( 'Grid Style', 'muffle' ),
-            'off'       => esc_html__( 'List Style', 'muffle' ),
-            'default'   => 'off',
-        ),
+        // array(
+        //     'title'     => esc_html__( 'Blog Format', 'muffle' ),
+        //     'id'        => 'defult_blog_format',
+        //     'type'      => 'switch',
+        //     'on'        => esc_html__( 'Grid Style', 'muffle' ),
+        //     'off'       => esc_html__( 'List Style', 'muffle' ),
+        //     'default'   => 'off',
+        // ),
 
         array(
             'id' => 'read_more_text_button',
