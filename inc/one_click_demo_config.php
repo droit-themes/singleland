@@ -11,22 +11,7 @@ function singleland_import_files() {
             'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
             'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot.png',
             'import_notice'                => 'All Page Demos',
-            'preview_url'                  => 'https://dlsingleland.droitlab.com/',
-            'local_import_redux'           => array(
-                array(
-                    'file_path'   => trailingslashit( get_template_directory() ) . 'inc/demos/settings.json',
-                    'option_name' => 'singleland_opt',
-                ),
-            ),
-        ),
-
-        array(
-            'import_file_name'             => esc_html__('Dark Demos', 'singleland'),
-            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demos/contents_dark.xml',
-            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demos/widgets.wie',
-            'import_preview_image_url'     => trailingslashit( get_template_directory_uri() ).'inc/demos/screenshot.png',
-            'import_notice'                => 'All Page Demos',
-            'preview_url'                  => 'https://dlsingleland.droitlab.com/dark',
+            'preview_url'                  => 'https://singleland.droitlab.com',
             'local_import_redux'           => array(
                 array(
                     'file_path'   => trailingslashit( get_template_directory() ) . 'inc/demos/settings.json',
@@ -48,7 +33,7 @@ function singleland_after_import_setup() {
     );
 
     // Assign front page and posts page (blog page).
-    $front_page_id = get_page_by_title( 'Home-Electric' );
+    $front_page_id = get_page_by_title( 'Home -- Electric' );
     $blog_page_id  = get_page_by_title( 'Blog Page' );
 
     // Disable Elementor's Default Colors and Default Fonts

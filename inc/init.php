@@ -52,7 +52,9 @@ require SINGLELAND_THEMEROOT_DIR . '/inc/breadcrumbs.php';
 /**
  * singleland Tgm
  */
-require SINGLELAND_THEMEROOT_DIR . '/inc/plugin_activation.php';
+require SINGLELAND_THEMEROOT_DIR . '/inc/tgm/class-plugins.php';
+require SINGLELAND_THEMEROOT_DIR . '/inc/tgm/tgm-plugin-activation.php';
+require SINGLELAND_THEMEROOT_DIR . '/inc/tgm/tgm-plugin-registration.php';
 
 
 /**
