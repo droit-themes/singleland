@@ -1,4 +1,8 @@
------ 1.0.5 (08 Jan 2023) -----
+----- 1.0.6 (17 April 2024) -----
+update  : Plugin install issue solved
+updated : Compatibility with latest WordPress
+
+----- 1.0.5 (08 Jan 2024) -----
 update  : singleland-core plugin updated
 updated : Compatibility with latest WordPress
 
