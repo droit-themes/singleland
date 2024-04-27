@@ -2979,3 +2979,7 @@ html.drdt-dark-mode .blog_grid_masonory.style_5 .dl_post_meta p:after {
 .woocommerce-checkout .woocommerce-checkout-review-order #payment ul.payment_methods li:before {
   top: 28px;
 }
+
+.header_area a.btn_get.btn-meta.btn_hover{
+  text-decoration: none;
+}
