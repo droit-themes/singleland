@@ -28,7 +28,7 @@ class singleland_Register_Plugins {
 				'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 				'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 				'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-				'version'            => '1.0.3'
+				'version'            => '1.0.3' 
 			),
 
 			array(
