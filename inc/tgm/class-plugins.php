@@ -22,13 +22,13 @@ class singleland_Register_Plugins {
 			array(
 				'name'               => esc_html__( 'Singleland Core', 'singleland' ), // The plugin name.
 				'slug'               => 'singleland-core', // The plugin slug (typically the folder name).
-				'source'             => 'https://singleland.droitlab.com/downloadfile/singleland-core_1.0.3.zip', // The plugin source.
+				'source'             => 'https://singleland.droitlab.com/downloadfile/singleland-core_1.0.4.zip', // The plugin source.
 				'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 				'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 				'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 				'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 				'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-				'version'            => '1.0.3' 
+				'version'            => '1.0.4' 
 			),
 
 			array(
