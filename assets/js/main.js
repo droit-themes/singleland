@@ -197,70 +197,139 @@ jQuery(function () {
 		qty.trigger("change");
 		$("body").removeClass("sf-input-focused");
 	});
-}
-$(document).ajaxComplete(function () {
-	QuantityChange();
-});
-//  add active class on checkout page 
-$('body').on( 'updated_checkout', function() {  // lets do this everytime the ajax event update_checkout goes off, which is also does when the checkout loads on inital page load and/or refreash
+	}
 
-    var $input = $('.wc_payment_method input');   // caching our input 
+	$(document).ajaxComplete(function () {
+		QuantityChange();
+	});
+	//  add active class on checkout page 
+	$('body').on( 'updated_checkout', function() {  // lets do this everytime the ajax event update_checkout goes off, which is also does when the checkout loads on inital page load and/or refreash
 
-    $input.filter(':checked').parent().addClass("active");  // filtering out the checked one and adding .is-active to the parten li on inital page load/refresh
+		var $input = $('.wc_payment_method input');   // caching our input 
 
-    $input.on('change', function () { // removing and adding our .is-active whnever there is a change
-        $input.parent().removeClass('active');
-        $(this).parent().addClass('active');
-    });     
-});  
-//  wishlist icon change 
-$('.theme-list-view-wrapper .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a').html('<i class="icon-heart"></i> <span></span>');
-$('.product_featured_img .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a').html('<i class="icon-heart"></i> <span></span>');
+		$input.filter(':checked').parent().addClass("active");  // filtering out the checked one and adding .is-active to the parten li on inital page load/refresh
 
-
-//popular courses js
-
+		$input.on('change', function () { // removing and adding our .is-active whnever there is a change
+			$input.parent().removeClass('active');
+			$(this).parent().addClass('active');
+		});     
+	});  
+	//  wishlist icon change 
+	$('.theme-list-view-wrapper .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a').html('<i class="icon-heart"></i> <span></span>');
+	$('.product_featured_img .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a').html('<i class="icon-heart"></i> <span></span>');
 
 
 //popular courses js
-$(".slider_items").slick({
-	arrows: false,
-	infinite: true,
-	autoplay: true,
-	autoplaySpeed: 2000,
-	loop: true,
-	slidesToShow: 4,
-	slidesToScroll: 2,
-	dots: true,
-	responsive: [
-		{
-		breakpoint: 1400,
-		settings: {
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			infinite: true,
-			dots: true
-		}
-		},
-		{
-			breakpoint: 992,
-			settings: {
-			slidesToShow: 2,
-			slidesToScroll: 1,
-			infinite: true,
-			dots: true
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
+
+
+
+	//popular courses js
+	// $(".slider_items").slick({
+	// 	arrows: false,
+	// 	infinite: true,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 2000,
+	// 	loop: true,
+	// 	slidesToShow: 4,
+	// 	slidesToScroll: 2,
+	// 	dots: true,
+	// 	responsive: [
+	// 		{
+	// 		breakpoint: 1400,
+	// 		settings: {
+	// 			slidesToShow: 3,
+	// 			slidesToScroll: 1,
+	// 			infinite: true,
+	// 			dots: true
+	// 		}
+	// 		},
+	// 		{
+	// 			breakpoint: 992,
+	// 			settings: {
+	// 			slidesToShow: 2,
+	// 			slidesToScroll: 1,
+	// 			infinite: true,
+	// 			dots: true
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 768,
+	// 			settings: {
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1,
+	// 				infinite: true,
+	// 				dots: true
+	// 			}
+	// 		}
+	// 	]
+	// });
+
+
+
+
+	// ================= FIXED SLICK SLIDER INITIALIZATION =================
+	function initSlickSlider() {
+		// 1. Check if element exists
+		if (!$('.slider_items').length) return;
+		
+		// 2. Check if Slick is loaded
+		if (typeof $.fn.slick === 'function') {
+			$(".slider_items").slick({
+				arrows: false,
 				infinite: true,
-				dots: true
+				autoplay: true,
+				autoplaySpeed: 2000,
+				loop: true,
+				slidesToShow: 4,
+				slidesToScroll: 2,
+				dots: true,
+				responsive: [
+					{
+						breakpoint: 1400,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1,
+							infinite: true,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							infinite: true,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							infinite: true,
+							dots: true
+						}
+					}
+				]
+			});
+		} 
+		// 3. Retry if Slick not loaded yet
+		else {
+			if (typeof initSlickSlider.retries === 'undefined') {
+				initSlickSlider.retries = 0;
+			}
+			
+			if (initSlickSlider.retries < 20) { // 20 attempts max
+				initSlickSlider.retries++;
+				setTimeout(initSlickSlider, 100); // Retry every 100ms
+			} else {
+				console.error('Slick slider initialization failed after 20 attempts');
 			}
 		}
-	]
-});
+	}
+	
+	// Initialize the slider
+	initSlickSlider();
 
 });

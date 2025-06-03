@@ -1,3 +1,8 @@
+----- 1.0.9 (03 Jun 2025) -----
+updated : Deprecated function updated
+update  : Singleland Theme css and js updated
+updated : Compatibility with latest WordPress
+
 ----- 1.0.8 (25 Jan 2025) -----
 update  : singleland-core plugin updated  ( 1.0.4 )
 updated : Compatibility with latest WordPress
