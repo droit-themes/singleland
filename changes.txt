@@ -1,3 +1,12 @@
+----- 1.1.1 (30 Dec 2025) -----
+updated : Deprecated function updated
+updated : Compatibility with latest WordPress
+
+----- 1.1.0 (03 Jun 2025) -----
+updated: Deprecated function updated
+update: Demo content updated
+updated: Compatibility with the latest WordPress
+
 ----- 1.0.9 (03 Jun 2025) -----
 updated : Deprecated function updated
 update  : Singleland Theme css and js updated
